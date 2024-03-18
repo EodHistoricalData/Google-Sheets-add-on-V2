@@ -1,0 +1,40 @@
+@mixin linkBase {
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+@mixin scrollBarHide {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    & {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
+
+@mixin scrollNative($ov) {
+    overflow: $ov;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+}
+
+@mixin textOverflow() {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    overflow: hidden;
+}
+
+@mixin textClamp($lineCount) {
+    word-break: break-word;
+    -webkit-line-clamp: $lineCount;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

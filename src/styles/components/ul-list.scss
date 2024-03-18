@@ -1,0 +1,25 @@
+@import '@/styles/helpers';
+
+.ul-list {
+    &__item {
+        display: flex;
+        gap: 10px;
+
+        &:not(:first-child) {
+            margin-top: 18px;
+        }
+
+        &-icon {
+            color: var(--eodClrDarkGreen1000);
+
+            width: 18px;
+            height: 18px;
+        }
+
+        &-text {
+            @include typo('t2');
+
+            flex: 1;
+        }
+    }
+}

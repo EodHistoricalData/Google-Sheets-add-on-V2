@@ -1,0 +1,54 @@
+.default-layout-header {
+    color: var(--eodClrWhite1000);
+
+    display: flex;
+    padding: 0 var(--eodContainerPaddingX);
+    height: 40px;
+
+    background: var(--eodClrGrey1000);
+
+    &__slot {
+        display: flex;
+        height: 100%;
+        gap: 8px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        transition: var(--eodDur1);
+
+        &:hover {
+            color: var(--eodClrBlue);
+        }
+
+        &-icon {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    &__status {
+        width: 12px;
+        height: 12px;
+
+        &_state {
+            &_success {
+                color: var(--eodClrDarkGreen1000);
+            }
+
+            &_warning {
+                color: var(--eodClrOrange);
+            }
+
+            &_error {
+                color: var(--eodClrDarkRed1000);
+            }
+        }
+    }
+
+    &__spacer {
+        flex: 1;
+    }
+}

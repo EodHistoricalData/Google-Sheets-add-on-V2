@@ -1,0 +1,53 @@
+.default-layout-footer {
+    &__support {
+        display: flex;
+        padding: 8px 12px;
+        gap: 8px;
+
+        &-icon {
+            width: 18px;
+            height: 18px;
+        }
+
+        &-text {
+            @include typo('t3');
+
+            a {
+                @include linkBase();
+            }
+        }
+    }
+
+    &__main {
+        color: var(--eodClrWhite1000);
+
+        padding: 10px var(--eodContainerPaddingX);
+
+        background: var(--eodClrGrey1000);
+
+        &-block {
+            &:not(:first-child) {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &__text {
+        @include typo('t2');
+
+        &_center {
+            text-align: center;
+        }
+
+        a {
+            @include linkBase();
+        }
+    }
+
+    &__action-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
+}

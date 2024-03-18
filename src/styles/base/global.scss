@@ -1,0 +1,48 @@
+:root {
+    --eodClrGrey1000: #0D273A;
+    --eodClrGrey900: #253D4E;
+    --eodClrGrey800: #3D5261;
+    --eodClrGrey300: #B6BEC4;
+    --eodClrGrey100: #E7E9EB;
+    --eodClrGrey25: #F9FAFA;
+
+    --eodClrWhite1000: #FFF;
+
+    --eodClrDarkGreen1000: #00B67A;
+    --eodClrLightGreen1000: #0CCE59;
+
+    --eodClrDarkRed1000: #B60000;
+    --eodClrLightRed1000: #F57171;
+
+    --eodClrOrange: #FD633E;
+    --eodClrOrangeHover: #E35938;
+    --eodClrOrangeActive: #C94F32;
+
+    --eodClrBlue: #91D5FF;
+    --eodClrBlueHover: #82C0E5;
+    --eodClrBlueActive: #74AACC;
+
+    --eodZIndexUnder: -1;
+    --eodZIndexLocal: 10;
+    --eodZIndexOverContent: 100;
+    --eodZIndexOverlay: 1000;
+
+    --eodContainerPaddingX: 16px;
+
+    --eodDur1: 0.2s;
+    --eodDur2: 0.3s;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: var(--eodClrGrey1000);
+    word-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: none;
+
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+
+    cursor: default;
+}

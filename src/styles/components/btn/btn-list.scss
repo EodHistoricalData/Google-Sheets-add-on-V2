@@ -1,0 +1,9 @@
+.btn-list {
+    display: flex;
+
+    align-items: center;
+
+    &_center {
+        justify-content: center;
+    }
+}

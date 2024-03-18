@@ -1,0 +1,21 @@
+.form-field {
+    &__label {
+        @include typo('t2');
+
+        &:not(:last-child) {
+            margin-bottom: 4px;
+        }
+
+        a {
+            @include linkBase();
+        }
+    }
+
+    &__error {
+        @include typo('t3');
+
+        color: var(--eodClrDarkRed1000);
+
+        margin-top: 4px;
+    }
+}

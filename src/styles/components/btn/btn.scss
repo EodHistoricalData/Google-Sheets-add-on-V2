@@ -1,0 +1,88 @@
+@import '@/styles/helpers';
+
+.btn {
+    @include typo('t2');
+
+    color: var(--btnClr);
+    white-space: nowrap;
+
+    position: relative;
+    z-index: var(--eodZIndexLocal);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 18px;
+    height: 40px;
+    gap: 8px;
+
+    transition: var(--eodDur1);
+    user-select: none;
+    border-radius: 24px;
+
+    &[disabled] {
+        --btnClr: var(--eodClrGrey300);
+        --btnBd: var(--eodClrGrey100);
+        --btnBg: var(--eodClrGrey25);
+
+        pointer-events: none;
+    }
+
+    &::before {
+        content: '';
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: var(--eodZIndexUnder);
+
+        border: 1px solid var(--btnBd);
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        transition: var(--eodDur1);
+        background: var(--btnBg);
+        border-radius: inherit;
+    }
+
+    &_wide {
+        width: 100%;
+    }
+
+    &_variant {
+        &_primary {
+            --btnClr: var(--eodClrWhite1000);
+            --btnBg: var(--eodClrOrange);
+
+            &:hover,
+            &:focus-visible {
+                --btnBg: var(--eodClrOrangeHover);
+            }
+
+            &:active {
+                --btnBg: var(--eodClrOrangeActive);
+            }
+        }
+
+        &_secondary {
+            --btnClr: var(--eodClrWhite1000);
+            --btnBg: var(--eodClrGrey1000);
+
+            &:hover,
+            &:focus-visible {
+                --btnBg: var(--eodClrGrey900);
+            }
+
+            &:active {
+                --btnBg: var(--eodClrGrey800);
+            }
+        }
+    }
+
+    &__icon {
+        width: 18px;
+        height: 18px;
+    }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@google-sheets-add-on/home</title>
+
+        <link rel="stylesheet" href="/src/styles/index.scss">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body style="max-width: 300px; margin: 0 auto;">
+        <div class="default-layout">
+            <header class="default-layout-header">
+                <div class="default-layout-header__slot">
+                    <a class="default-layout-header__item" href="#">
+                        <svg class="default-layout-header__item-icon svg-icon">
+                            <use xlink:href="./icons/sprite.svg#home"></use>
+                        </svg>
+                    </a>
+
+                    <a class="default-layout-header__item" href="#">
+                        <svg class="default-layout-header__item-icon svg-icon">
+                            <use xlink:href="./icons/sprite.svg#stats"></use>
+                        </svg>
+                    </a>
+
+                    <a class="default-layout-header__item" href="#">
+                        <svg class="default-layout-header__item-icon svg-icon">
+                            <use xlink:href="./icons/sprite.svg#question"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="default-layout-header__spacer"></div>
+
+                <div class="default-layout-header__slot">
+                    <div class="default-layout-header__item">
+                        <!--
+                            Alternative states: '_warning' | '_error'.
+                            Icon for warning state is 'sprite.svg#status-warning'
+                         -->
+
+                        <svg class="default-layout-header__status default-layout-header__status_state_success svg-icon">
+                            <use xlink:href="./icons/sprite.svg#status"></use>
+                        </svg>
+                    </div>
+
+                    <a class="default-layout-header__item" href="#">
+                        <svg class="default-layout-header__item-icon svg-icon">
+                            <use xlink:href="./icons/sprite.svg#link"></use>
+                        </svg>
+                    </a>
+
+                    <a class="default-layout-header__item" href="#">
+                        <svg class="default-layout-header__item-icon svg-icon">
+                            <use xlink:href="./icons/sprite.svg#email"></use>
+                        </svg>
+                    </a>
+                </div>
+            </header>
+
+            <div class="default-layout-body">
+                <div class="default-layout-body__block">
+                    <div class="default-layout-body__block-text">
+                        Welcome to EODHD's financial data add-on. <a href="#">Eodhd.com</a> specialises in providing complete financial data through APIs.  This simple yet powerful formula-free add-on will enhance your Google Sheets by integrating various types of financial data with charts, including <strong>EOD</strong>, <strong>real-time</strong>, <strong>intraday</strong>, and <strong>historical data</strong> for <strong>Stocks</strong>, <strong>ETFs</strong>, <strong>Funds</strong>, <strong>Indices</strong>, <strong>Futures</strong>, <strong>Bonds</strong>, <strong>Options</strong>, <strong>Forex Pairs</strong>, and <strong>Crypto</strong>. Read more about it <a href="#">here</a>.
+                    </div>
+                </div>
+
+                <div class="default-layout-body__block default-layout-body__block_variant_grey">
+                    <h2 class="default-layout-body__block-title">How to start</h2>
+
+                    <div class="default-layout-body__block-content">
+                        <form action="#">
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <div class="form-field__label">1. <a href="#">Register for free</a> on our site eodhd.com to get API Key (or <a href="#">Log in</a>)</div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-field input-text" data-form-validation="required|email">
+                                    <div class="form-field__label">2. Insert your API key here</div>
+
+                                    <div class="form-field__main">
+                                        <div class="input-text__field">
+                                            <div class="input-text__bd"></div>
+                                            <input
+                                                class="form-field__input input-text__input"
+                                                type="text"
+                                                placeholder="xxxxxxxxxxxxxx.xxxxxxxxx"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="form-field__error">error text</div> -->
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="btn-list btn-list_center">
+                                    <button class="btn btn_variant_secondary">
+                                        <svg class="btn__icon svg-icon">
+                                            <use xlink:href="./icons/sprite.svg#stats"></use>
+                                        </svg>
+
+                                        <div class="btn__text">Explore data</div>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="default-layout-footer">
+                <div class="default-layout-footer__support">
+                    <svg class="default-layout-footer__support-icon svg-icon">
+                        <use xlink:href="./icons/sprite.svg#question"></use>
+                    </svg>
+
+                    <div class="default-layout-footer__support-text">
+                        If you have any questions, you can visit our <a href="#">forum</a> or contact our 24/7 live <a href="#">support team</a>.
+                    </div>
+                </div>
+
+                <div class="default-layout-footer__main">
+                    <div class="default-layout-footer__main-block">
+                        <div class="default-layout-footer__text">
+                            Your current API key is associated with our <strong>free plan</strong>, which includes certain usage limitations. For access to a broader range of data, please review our available plans.
+                        </div>
+                    </div>
+
+                    <div class="default-layout-footer__main-block">
+                        <div class="default-layout-footer__action-list">
+                            <a class="btn btn_variant_primary" href="#">
+                                <div class="btn__text">Upgrade plan</div>
+                            </a>
+
+                            <div class="default-layout-footer__text">
+                                from $19.99
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="default-layout-footer__main-block">
+                        <div class="default-layout-footer__text default-layout-footer__text_center">
+                            <a href="#">Privacy policy</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

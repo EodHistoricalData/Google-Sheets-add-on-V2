@@ -1,0 +1,66 @@
+.intro-layout {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        padding: 16px 40px;
+    }
+
+    &__logo-img {
+        width: auto;
+        height: 48px;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        padding: 0 40px;
+        flex-grow: 1;
+
+        &-inner {
+            width: 100%;
+        }
+
+        &-icon {
+            margin: 0 auto 24px;
+            width: 64px;
+            height: 64px;
+        }
+    }
+
+    &__title {
+        @include typo('h4', 'bold');
+    }
+
+    &__list {
+        margin-top: 24px;
+
+        .ul-list__item {
+            justify-content: center;
+        }
+
+        .ul-list__item-text {
+            flex: initial;
+        }
+    }
+
+    &__action {
+        margin-top: 24px;
+    }
+
+    &__footer {
+        @include typo('t2');
+
+
+        padding: 16px 40px;
+
+        a {
+            @include linkBase();
+        }
+    }
+}

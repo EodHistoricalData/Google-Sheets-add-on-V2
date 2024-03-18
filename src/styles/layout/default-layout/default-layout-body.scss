@@ -1,0 +1,29 @@
+.default-layout-body {
+    flex-grow: 1;
+
+    &__block {
+        padding: 24px var(--eodContainerPaddingX);
+
+        &-title {
+            @include typo('h5');
+
+            text-align: center;
+
+            margin-bottom: 18px;
+        }
+
+        &-text {
+            @include typo('t2');
+
+            a {
+                @include linkBase();
+            }
+        }
+
+        &_variant {
+            &_grey {
+                background: var(--eodClrGrey100)
+            }
+        }
+    }
+}
