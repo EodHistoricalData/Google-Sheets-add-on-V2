@@ -1,6 +1,10 @@
 .default-layout-body {
     flex-grow: 1;
 
+    &__notice {
+        padding: 16px var(--eodContainerPaddingX) 0;
+    }
+
     &__block {
         padding: 24px var(--eodContainerPaddingX);
 
@@ -9,7 +13,7 @@
 
             text-align: center;
 
-            margin-bottom: 18px;
+            margin-bottom: 12px;
         }
 
         &-text {

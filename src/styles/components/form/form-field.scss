@@ -2,6 +2,8 @@
     &__label {
         @include typo('t2');
 
+        display: block;
+
         &:not(:last-child) {
             margin-bottom: 4px;
         }
