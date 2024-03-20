@@ -91,14 +91,87 @@
                                 </div>
 
                                 <div class="accordion__item-body">
-                                    <div class="accordion__item-inner-wrapper">
-                                        <div class="accordion__item-inner">
+                                    <div class="accordion__item-body-inner">
+                                        <div class="accordion__item-body-inner-content">
                                             <div class="accordion__item-description">
                                                 EOD (End-of-Day) data is the values received at the end of the trading session of a given day. More about EOD is <a href="#">here</a>.
                                             </div>
 
                                             <div class="accordion__item-content">
                                                 <form action="#">
+                                                    <div class="form-row">
+                                                        <div class="form-slidable-group slide-toggle -active">
+                                                            <div class="form-slidable-group__head slide-toggle__trigger">
+                                                                <div class="form-slidable-group__head-label">Search for company / ticker</div>
+
+                                                                <svg class="form-slidable-group__head-icon svg-icon">
+                                                                    <use xlink:href="./icons/sprite.svg#chevron-down"></use>
+                                                                </svg>
+                                                            </div>
+
+                                                            <div class="form-slidable-group__body slide-toggle__body">
+                                                                <div class="form-slidable-group__body-inner slide-toggle__body-inner">
+                                                                    <div class="form-slidable-group__body-inner-content">
+                                                                        <div class="form-row form-row_sm">
+                                                                            <div class="form-field input-text">
+                                                                                <div class="form-field__main">
+                                                                                    <div class="input-text__field">
+                                                                                        <div class="input-text__bd"></div>
+                                                                                        <input
+                                                                                            class="form-field__input input-text__input"
+                                                                                            type="text"
+                                                                                            placeholder="AAPL"
+                                                                                        />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-row form-row_sm">
+                                                                            <div class="form-field select-multiple">
+                                                                                <div class="form-field__main">
+                                                                                    <div class="select-multiple__field">
+                                                                                        <div class="select-multiple__bd"></div>
+
+                                                                                        <select class="form-field__input select-multiple__input" multiple>
+                                                                                            <option value="AAPL1">AAPL1</option>
+                                                                                            <option value="AAPL2">AAPL2</option>
+                                                                                            <option value="AAPL3">AAPL3</option>
+                                                                                            <option value="AAPL4">AAPL4</option>
+                                                                                            <option value="AAPL5">AAPL5</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <div class="form-row form-row_sm">
+                                                                            <button class="btn btn_variant_secondary" type="button">
+                                                                                Add to the list below
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-field">
+                                                            <label class="form-field__label"></label>
+
+                                                            <!-- <div class="form-field__main">
+                                                                <div class="input-text__field">
+                                                                    <div class="input-text__bd"></div>
+                                                                    <input
+                                                                        class="form-field__input input-text__input"
+                                                                        type="text"
+                                                                        placeholder="E.g. AAPL"
+                                                                    />
+                                                                </div>
+                                                            </div> -->
+                                                        </div>
+                                                    </div>
+
                                                     <div class="form-row">
                                                         <div class="form-field input-text">
                                                             <label class="form-field__label">List of tickers for request</label>
@@ -152,29 +225,29 @@
                                                         </div>
                                                     </div>
 
-                                                    <!-- <div class="form-row">
-                                                        <div class="form-field input-checkbox">
+                                                    <div class="form-row">
+                                                        <div class="form-field input-checkbox input-selection-primitive">
                                                             <div class="form-field__main">
-                                                                <label class="input-checkbox__field">
-                                                                    <input class="input-checkbox__native" type="checkbox" />
-
-                                                                    <div class="input-checkbox__icon-box">
-                                                                        <svg class="input-checkbox__icon-pic svg-icon">
+                                                                <label class="input-selection-primitive__field">
+                                                                    <div class="input-selection-primitive__input">
+                                                                        <input class="input-selection-primitive__native" type="checkbox" />
+                                                                        <div class="input-selection-primitive__icon-box"></div>
+                                                                        <svg class="input-selection-primitive__icon-pic svg-icon">
                                                                             <use xlink:href="./icons/sprite.svg#chevron-down"></use>
                                                                         </svg>
                                                                     </div>
 
-                                                                    <div class="input-checkbox__content">
-                                                                        <div class="input-checkbox__label">
+                                                                    <div class="input-selection-primitive__content">
+                                                                        <div class="input-selection-primitive__label">
                                                                             Build a chart
                                                                         </div>
                                                                     </div>
                                                                 </label>
                                                             </div>
 
-                                                            <div class="form-field__error">checkbox error</div>
+                                                            <div class="form-field__error">error text</div>
                                                         </div>
-                                                    </div> -->
+                                                    </div>
 
                                                     <div class="form-row">
                                                         <div class="btn-list btn-list_center">
@@ -200,8 +273,8 @@
                                 </div>
 
                                 <div class="accordion__item-body">
-                                    <div class="accordion__item-inner-wrapper">
-                                        <div class="accordion__item-inner">
+                                    <div class="accordion__item-body-inner">
+                                        <div class="accordion__item-body-inner-content">
                                             <div class="accordion__item-description">
                                                 * The maximum period between 'from' and 'to' dates is 120 days for 1-minute intervals, 600 days for 5-minute intervals, and 7200 days for 1-hour intervals. More about Intraday Data here.
                                             </div>

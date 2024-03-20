@@ -1,0 +1,59 @@
+.input-selection-primitive {
+    &__field {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__input {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 18px;
+        height: 18px;
+    }
+
+    &__native {
+        position: absolute;
+        z-index: var(--eodZIndexLocal);
+
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+
+        &:checked {
+            &~.input-selection-primitive__icon-pic {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__icon {
+        &-box {
+            position: absolute;
+
+            border: 1px solid currentColor;
+            width: 100%;
+            height: 100%;
+        }
+
+        &-pic {
+            position: absolute;
+
+            width: 100%;
+            height: 100%;
+
+            transition: var(--eodDur1);
+            opacity: 0;
+        }
+    }
+
+    &__content {
+        flex: 1;
+    }
+
+    &__label {
+        @include typo('t2');
+    }
+}

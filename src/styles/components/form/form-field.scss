@@ -18,6 +18,11 @@
 
         color: var(--eodClrDarkRed1000);
 
+        display: none;
         margin-top: 4px;
+
+        &.-active {
+            display: block;
+        }
     }
 }

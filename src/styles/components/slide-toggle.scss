@@ -1,0 +1,20 @@
+.slide-toggle {
+    &.-active {
+        .slide-toggle__body {
+            grid-template-rows: 1fr;
+        }
+
+        .slide-toggle__body-inner {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    &__body {
+        @include slideToggleBody();
+    }
+
+    &__body-inner {
+        @include slideToggleBodyInner();
+    }
+}

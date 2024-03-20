@@ -1,11 +1,3 @@
-@mixin linkBase {
-    text-decoration: underline;
-
-    &:hover {
-        text-decoration: none;
-    }
-}
-
 @mixin scrollBarHide {
     &::-webkit-scrollbar {
         display: none;
@@ -37,4 +29,29 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+@mixin linkBase {
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+@mixin slideToggleBody() {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+
+    transition: var(--eodDur2);
+    transition-property: grid-template-rows;
+}
+
+@mixin slideToggleBodyInner() {
+    min-height: 0;
+
+    transition: var(--eodDur2);
+    opacity: 0;
+    transform: translateY(-8px);
 }

@@ -13,7 +13,7 @@
                 grid-template-rows: 1fr;
             }
 
-            .accordion__item-inner-wrapper {
+            .accordion__item-body-inner {
                 opacity: 1;
                 transform: none;
             }
@@ -42,28 +42,23 @@
         }
 
         &-body {
-            display: grid;
-            grid-template-rows: 0fr;
-            overflow: hidden;
-
-            transition: var(--eodDur2);
-            transition-property: grid-template-rows;
+            @include slideToggleBody();
         }
 
-        &-inner-wrapper {
-            min-height: 0;
-
-            transition: var(--eodDur2);
-            opacity: 0;
-            transform: translateY(-8px);
+        &-body-inner {
+            @include slideToggleBodyInner();
         }
 
-        &-inner {
+        &-body-inner-content {
             padding-bottom: 24px;
         }
 
         &-description {
             @include typo('t2');
+
+            a {
+                @include linkBase();
+            }
         }
 
         &-content {
