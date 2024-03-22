@@ -79,6 +79,20 @@
                 --btnBg: var(--eodClrGrey800);
             }
         }
+
+        &_alternative {
+            --btnClr: var(--eodClrGrey1000);
+            --btnBg: var(--eodClrBlue);
+
+            &:hover,
+            &:focus-visible {
+                --btnBg: var(--eodClrBlueHover);
+            }
+
+            &:active {
+                --btnBg: var(--eodClrBlueActive);
+            }
+        }
     }
 
     &__icon {

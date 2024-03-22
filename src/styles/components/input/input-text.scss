@@ -1,8 +1,5 @@
 .input-text {
     &__field {
-        position: relative;
-        z-index: var(--eodZIndexLocal);
-
         background: var(--eodClrWhite1000);
         border-radius: 8px;
     }
@@ -22,8 +19,6 @@
 
     &__input {
         @include typo('t1');
-
-        color: var(--eodClrGrey1000);
 
         padding: 0 10px;
         width: 100%;

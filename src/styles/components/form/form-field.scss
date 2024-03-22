@@ -1,4 +1,32 @@
 .form-field {
+    &+.form-field {
+        margin-top: 4px;
+    }
+
+    &.-success {
+        .form-field__response,
+        .form-field__main-icon_status {
+            color: var(--eodClrDarkGreen1000);
+
+            display: block;
+        }
+    }
+
+    &.-error {
+        .form-field__response,
+        .form-field__main-icon_status {
+            color: var(--eodClrDarkRed1000);
+
+            display: block;
+        }
+    }
+
+    &_size {
+        &_sm {
+            max-width: 146px;
+        }
+    }
+
     &__label {
         @include typo('t2');
 
@@ -13,16 +41,32 @@
         }
     }
 
-    &__error {
-        @include typo('t3');
+    &__main {
+        display: flex;
+        align-items: center;
+        gap: 16px;
 
-        color: var(--eodClrDarkRed1000);
+        &-icon {
+            width: 18px;
+            height: 18px;
+
+            &_status {
+                display: none;
+            }
+        }
+    }
+
+    &__field {
+        position: relative;
+        z-index: var(--eodZIndexLocal);
+
+        flex: 1;
+    }
+
+    &__response {
+        @include typo('t3');
 
         display: none;
         margin-top: 4px;
-
-        &.-active {
-            display: block;
-        }
     }
 }

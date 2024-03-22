@@ -1,0 +1,17 @@
+.link-list {
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 4px 0;
+        gap: 4px;
+
+        &-text {
+            @include typo('t2');
+        }
+
+        &-icon {
+            width: 18px;
+            height: 18px;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-.select-multiple {
+.select {
     &__field {
         background: var(--eodClrWhite1000);
         border-radius: 8px;
@@ -8,7 +8,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        z-index: var(--eodZIndexLocal);
+        z-index: var(--eodZIndexUnder);
 
         border: 1px solid var(--eodClrGrey300);
         width: 100%;
@@ -18,9 +18,22 @@
         pointer-events: none;
     }
 
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+
+        width: 18px;
+        height: 18px;
+
+        transform: translateY(-50%);
+    }
+
     &__input {
-        display: block;
-        padding: 10px 0 10px 10px;
+        @include typo('t1');
+
+        padding: 0 38px 0 10px;
         width: 100%;
+        height: 40px;
     }
 }

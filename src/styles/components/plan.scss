@@ -1,0 +1,37 @@
+.plan {
+    &__label {
+        @include typo('t2');
+
+        margin-bottom: 4px;
+    }
+
+    &__item {
+        color: var(--eodClrGrey700);
+
+        display: flex;
+        gap: 8px;
+
+        &.-success {
+            color: var(--eodClrGrey1000);
+
+            .plan__item-icon {
+                color: var(--eodClrDarkGreen1000);
+            }
+        }
+
+        &:not(:first-child) {
+            margin-top: 4px;
+        }
+
+        &-icon {
+            width: 18px;
+            height: 18px;
+        }
+
+        &-text {
+            @include typo('t2');
+
+            flex-grow: 1;
+        }
+    }
+}

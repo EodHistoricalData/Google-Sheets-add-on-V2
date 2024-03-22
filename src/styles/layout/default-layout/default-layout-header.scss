@@ -19,7 +19,8 @@
 
         transition: var(--eodDur1);
 
-        &:hover {
+        &:hover,
+        &.-active {
             color: var(--eodClrBlue);
         }
 

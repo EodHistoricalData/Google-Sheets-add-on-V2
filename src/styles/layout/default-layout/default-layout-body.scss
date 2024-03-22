@@ -1,4 +1,5 @@
 .default-layout-body {
+    padding: 24px 0;
     flex-grow: 1;
 
     &__notice {
@@ -6,14 +7,36 @@
     }
 
     &__block {
-        padding: 24px var(--eodContainerPaddingX);
+        padding: 0 var(--eodContainerPaddingX);
+
+        &_pt {
+            padding-top: 24px;
+        }
+
+        &_pb {
+            padding-bottom: 24px;
+        }
 
         &-title {
-            @include typo('h5');
-
-            text-align: center;
-
+            display: flex;
+            align-items: center;
             margin-bottom: 12px;
+            gap: 8px;
+
+            &_center {
+                text-align: center;
+
+                justify-content: center;
+            }
+
+            &-icon {
+                width: 18px;
+                height: 18px;
+            }
+
+            &-text {
+                @include typo('h5');
+            }
         }
 
         &-text {
