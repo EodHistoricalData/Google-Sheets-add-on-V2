@@ -1,0 +1,28 @@
+.form {
+    &__head {
+        border-bottom: 1px solid var(--eodClrGrey1000);
+        padding-bottom: 12px;
+
+        &-title {
+            @include typo('h5');
+        }
+
+        &-description {
+            @include typo('t2');
+
+            &:not(:first-child) {
+                margin-top: 12px;
+            }
+
+            a {
+                @include linkBase();
+            }
+        }
+    }
+
+    &__body {
+        &:not(:first-child) {
+            padding-top: 24px;
+        }
+    }
+}

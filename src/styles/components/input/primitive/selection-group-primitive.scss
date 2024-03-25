@@ -1,0 +1,14 @@
+.selection-group-primitive {
+    &_inline {
+        .selection-group-primitive__list {
+            flex-direction: row;
+            gap: 20px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+}

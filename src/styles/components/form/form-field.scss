@@ -1,10 +1,6 @@
 .form-field {
-    &+.form-field {
-        margin-top: 4px;
-    }
-
     &.-success {
-        .form-field__response,
+        &>.form-field__response,
         .form-field__main-icon_status {
             color: var(--eodClrDarkGreen1000);
 
@@ -13,7 +9,7 @@
     }
 
     &.-error {
-        .form-field__response,
+        &>.form-field__response,
         .form-field__main-icon_status {
             color: var(--eodClrDarkRed1000);
 
@@ -24,6 +20,10 @@
     &_size {
         &_sm {
             max-width: 146px;
+        }
+
+        &_md {
+            max-width: 180px;
         }
     }
 

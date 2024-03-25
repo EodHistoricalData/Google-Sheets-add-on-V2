@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@google-sheets-add-on/home</title>
+
+        <link rel="stylesheet" href="/src/styles/index.scss">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body style="padding: 24px; max-width: 768px;">
+        <div class="default-layout">
+            <form action="#">
+                <div class="form__head">
+                    <div class="form__head-title">New Screener</div>
+                    <div class="form__head-description">You can find a detailed description of the Screener API, which is used to make Screener requests and its parameters, in our <a href="#">documentation</a>.</div>
+                </div>
+
+                <div class="form__body">
+                    <div class="form-group">
+                        <div class="form-group__title">Text filters</div>
+                        <div class="form-group__description">These are text fields. Separate inputs by coma ",” for multiple options.</div>
+
+                        <div class="form-group__body">
+                            <div class="form-row">
+                                <div class="form-field input-text">
+                                    <label class="form-field__label">Tickers:</label>
+
+                                    <div class="form-field__main">
+                                        <div class="form-field__field input-text__field">
+                                            <div class="input-text__bd"></div>
+                                            <input class="form-field__input input-text__input" type="text" placeholder="APPL.US, TSLA.US">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-field input-text">
+                                    <label class="form-field__label">Company name:</label>
+
+                                    <div class="form-field__main">
+                                        <div class="form-field__field input-text__field">
+                                            <div class="input-text__bd"></div>
+                                            <input class="form-field__input input-text__input" type="text" placeholder="Microsoft">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-field input-text">
+                                    <label class="form-field__label">Exchange (list of exchange codes):</label>
+
+                                    <div class="form-field__main">
+                                        <div class="form-field__field input-text__field">
+                                            <div class="input-text__bd"></div>
+                                            <input class="form-field__input input-text__input" type="text" placeholder="Microsoft">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-group__title">Industry</div>
+
+                        <div class="form-group__body">
+                            <div class="form-row">
+                                <div class="form-field select">
+                                    <div class="form-field__main">
+                                        <div class="form-field__field select__field">
+                                            <div class="select__bd"></div>
+
+                                            <svg class="select__arrow svg-icon">
+                                                <use xlink:href="./icons/sprite.svg#chevron-down"></use>
+                                            </svg>
+
+                                            <select class="form-field__input select__input">
+                                                <option value selected>Industry (Select sector first)</option>
+                                                <option value="1">value-1</option>
+                                                <option value="2">value-2</option>
+                                                <option value="3">value-3</option>
+                                                <option value="4">value-4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-group__title">Additional filters</div>
+
+                        <div class="form-group__body">
+                            // ...
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-group__title">Signal filters</div>
+                        <div class="form-group__description">Learn more about signals in our <a href="#">documentation.</a></div>
+
+                        <div class="form-group__body">
+                            <div class="form-row">
+                                <div class="form-field selection-group-primitive selection-group-primitive_inline">
+                                    <div class="form-field__main">
+                                        <div class="form-field__field">
+                                            <div class="selection-group-primitive__list">
+                                                <div class="form-field radio-button selection-primitive">
+                                                    <div class="form-field__main">
+                                                        <label class="form-field__field selection-primitive__field">
+                                                            <div class="selection-primitive__input">
+                                                                <input class="selection-primitive__native" name="200d_new" type="radio" checked>
+                                                                <div class="selection-primitive__icon-box"></div>
+                                                                <svg class="selection-primitive__icon-pic svg-icon">
+                                                                    <use xlink:href="./icons/sprite.svg#radio"></use>
+                                                                </svg>
+                                                            </div>
+
+                                                            <div class="selection-primitive__content">
+                                                                <div class="selection-primitive__label">
+                                                                    New 200 days low
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-field radio-button selection-primitive">
+                                                    <div class="form-field__main">
+                                                        <label class="form-field__field selection-primitive__field">
+                                                            <div class="selection-primitive__input">
+                                                                <input class="selection-primitive__native" name="200d_new" type="radio">
+                                                                <div class="selection-primitive__icon-box"></div>
+                                                                <svg class="selection-primitive__icon-pic svg-icon">
+                                                                    <use xlink:href="./icons/sprite.svg#radio"></use>
+                                                                </svg>
+                                                            </div>
+
+                                                            <div class="selection-primitive__content">
+                                                                <div class="selection-primitive__label">
+                                                                    New 200 days high
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-field selection-group-primitive selection-group-primitive_inline">
+                                    <div class="form-field__main">
+                                        <div class="form-field__field">
+                                            <div class="selection-group-primitive__list">
+                                                <div class="form-field radio-button selection-primitive">
+                                                    <div class="form-field__main">
+                                                        <label class="form-field__field selection-primitive__field">
+                                                            <div class="selection-primitive__input">
+                                                                <input class="selection-primitive__native" name="bookvalue" type="radio" checked>
+                                                                <div class="selection-primitive__icon-box"></div>
+                                                                <svg class="selection-primitive__icon-pic svg-icon">
+                                                                    <use xlink:href="./icons/sprite.svg#radio"></use>
+                                                                </svg>
+                                                            </div>
+
+                                                            <div class="selection-primitive__content">
+                                                                <div class="selection-primitive__label">
+                                                                    Negative book Value
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-field radio-button selection-primitive">
+                                                    <div class="form-field__main">
+                                                        <label class="form-field__field selection-primitive__field">
+                                                            <div class="selection-primitive__input">
+                                                                <input class="selection-primitive__native" name="bookvalue" type="radio">
+                                                                <div class="selection-primitive__icon-box"></div>
+                                                                <svg class="selection-primitive__icon-pic svg-icon">
+                                                                    <use xlink:href="./icons/sprite.svg#radio"></use>
+                                                                </svg>
+                                                            </div>
+
+                                                            <div class="selection-primitive__content">
+                                                                <div class="selection-primitive__label">
+                                                                    Positive book Value
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-field selection-group-primitive selection-group-primitive_inline">
+                                    <div class="form-field__main">
+                                        <div class="form-field__field">
+                                            <div class="selection-group-primitive__list">
+                                                <div class="form-field radio-button selection-primitive">
+                                                    <div class="form-field__main">
+                                                        <label class="form-field__field selection-primitive__field">
+                                                            <div class="selection-primitive__input">
+                                                                <input class="selection-primitive__native" name="wallstreet" type="radio" checked>
+                                                                <div class="selection-primitive__icon-box"></div>
+                                                                <svg class="selection-primitive__icon-pic svg-icon">
+                                                                    <use xlink:href="./icons/sprite.svg#radio"></use>
+                                                                </svg>
+                                                            </div>
+
+                                                            <div class="selection-primitive__content">
+                                                                <div class="selection-primitive__label">
+                                                                    Lower than expected by Wall Street
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-field radio-button selection-primitive">
+                                                    <div class="form-field__main">
+                                                        <label class="form-field__field selection-primitive__field">
+                                                            <div class="selection-primitive__input">
+                                                                <input class="selection-primitive__native" name="wallstreet" type="radio">
+                                                                <div class="selection-primitive__icon-box"></div>
+                                                                <svg class="selection-primitive__icon-pic svg-icon">
+                                                                    <use xlink:href="./icons/sprite.svg#radio"></use>
+                                                                </svg>
+                                                            </div>
+
+                                                            <div class="selection-primitive__content">
+                                                                <div class="selection-primitive__label">
+                                                                    Higher than expected by Wall Street
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-group__body">
+                            <div class="form-row">
+                                <div class="form-field form-field_size_md select">
+                                    <div class="form-field__main">
+                                        <div class="form-field__field select__field">
+                                            <div class="select__bd"></div>
+
+                                            <svg class="select__arrow svg-icon">
+                                                <use xlink:href="./icons/sprite.svg#chevron-down"></use>
+                                            </svg>
+
+                                            <select class="form-field__input select__input">
+                                                <option value="" selected>Sort by</option>
+                                                <option value="1">value-1</option>
+                                                <option value="2">value-2</option>
+                                                <option value="3">value-3</option>
+                                                <option value="4">value-4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-field selection-group-primitive selection-group-primitive_inline">
+                                    <label class="form-field__label">Order:</label>
+
+                                    <div class="form-field__main">
+                                        <div class="form-field__field">
+                                            <div class="selection-group-primitive__list">
+                                                <div class="form-field radio-button selection-primitive">
+                                                    <div class="form-field__main">
+                                                        <label class="form-field__field selection-primitive__field">
+                                                            <div class="selection-primitive__input">
+                                                                <input class="selection-primitive__native" name="order" type="radio" checked="">
+                                                                <div class="selection-primitive__icon-box"></div>
+                                                                <svg class="selection-primitive__icon-pic svg-icon">
+                                                                    <use xlink:href="./icons/sprite.svg#radio"></use>
+                                                                </svg>
+                                                            </div>
+
+                                                            <div class="selection-primitive__content">
+                                                                <div class="selection-primitive__label">
+                                                                    High to low
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-field radio-button selection-primitive">
+                                                    <div class="form-field__main">
+                                                        <label class="form-field__field selection-primitive__field">
+                                                            <div class="selection-primitive__input">
+                                                                <input class="selection-primitive__native" name="order" type="radio">
+                                                                <div class="selection-primitive__icon-box"></div>
+                                                                <svg class="selection-primitive__icon-pic svg-icon">
+                                                                    <use xlink:href="./icons/sprite.svg#radio"></use>
+                                                                </svg>
+                                                            </div>
+
+                                                            <div class="selection-primitive__content">
+                                                                <div class="selection-primitive__label">
+                                                                    Low to high
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                123
+                                <!--  -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <script type="module" src="/src/scripts/index.js"></script>
+    </body>
+</html>

@@ -1,5 +1,7 @@
 .select-multiple {
     &__field {
+        overflow: hidden;
+
         background: var(--eodClrWhite1000);
         border-radius: 8px;
     }

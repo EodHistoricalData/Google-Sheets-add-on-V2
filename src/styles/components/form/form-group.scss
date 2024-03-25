@@ -1,0 +1,25 @@
+.form-group {
+    &:not(:first-child) {
+        margin-top: 24px;
+        border-top: 1px solid var(--eodClrGrey1000);
+        padding-top: 24px;
+    }
+
+    &__title {
+        @include typo('h6', 'bold');
+    }
+
+    &__description {
+        @include typo('t2');
+
+        a {
+            @include linkBase();
+        }
+    }
+
+    &__body {
+        &:not(:first-child) {
+            margin-top: 12px;
+        }
+    }
+}

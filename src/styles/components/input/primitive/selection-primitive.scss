@@ -1,4 +1,4 @@
-.input-selection-primitive {
+.selection-primitive {
     &__field {
         display: flex;
         gap: 8px;
@@ -23,7 +23,7 @@
         opacity: 0;
 
         &:checked {
-            &~.input-selection-primitive__icon-pic {
+            &~.selection-primitive__icon-pic {
                 opacity: 1;
             }
         }
@@ -34,8 +34,8 @@
             position: absolute;
 
             border: 1px solid currentColor;
-            width: 100%;
-            height: 100%;
+            width: 16px;
+            height: 16px;
         }
 
         &-pic {

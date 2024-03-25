@@ -1,4 +1,6 @@
 .form-row {
+    display: flex;
+
     &:not(:first-child) {
         margin-top: 16px;
     }
@@ -7,5 +9,9 @@
         &:not(:first-child) {
             margin-top: 8px;
         }
+    }
+
+    &>* {
+        width: 100%;
     }
 }
