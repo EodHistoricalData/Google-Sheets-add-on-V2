@@ -12,6 +12,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     overflow: hidden;
     padding: 0 18px;
     height: 40px;
@@ -49,6 +50,10 @@
 
     &_wide {
         width: 100%;
+    }
+
+    &_icon-only {
+        width: 40px;
     }
 
     &_variant {
@@ -91,6 +96,20 @@
 
             &:active {
                 --btnBg: var(--eodClrBlueActive);
+            }
+        }
+
+        &_ghost {
+            --btnClr: var(--eodClrGrey1000);
+            // --btnBg: var(--eodClrGrey1000);
+
+            &:hover,
+            &:focus-visible {
+                --btnBg: var(--eodClrGrey25);
+            }
+
+            &:active {
+                --btnBg: var(--eodClrGrey100);
             }
         }
     }

@@ -1,4 +1,6 @@
 .form-field {
+    width: 100%;
+
     &.-success {
         &>.form-field__response,
         .form-field__main-icon_status {
@@ -23,7 +25,7 @@
         }
 
         &_md {
-            max-width: 180px;
+            max-width: 280px;
         }
     }
 

@@ -3,6 +3,10 @@
         .selection-group-primitive__list {
             flex-direction: row;
             gap: 20px;
+
+            &>* {
+                width: auto;
+            }
         }
     }
 

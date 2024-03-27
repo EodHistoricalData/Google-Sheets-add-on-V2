@@ -14,7 +14,7 @@
 
     - Stock Market Screener;
         - popup 1;
-        - popup 2;
+        + popup 2;
 
     - Stock Prices Data;
         - popup 1;

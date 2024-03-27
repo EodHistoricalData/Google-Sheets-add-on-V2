@@ -1,5 +1,7 @@
 .form-row {
     display: flex;
+    align-items: flex-end;
+    gap: 12px;
 
     &:not(:first-child) {
         margin-top: 16px;
@@ -9,9 +11,5 @@
         &:not(:first-child) {
             margin-top: 8px;
         }
-    }
-
-    &>* {
-        width: 100%;
     }
 }
