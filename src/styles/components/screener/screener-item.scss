@@ -1,0 +1,37 @@
+.screener-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+
+    &__id {
+        @include typo('t1', 'bold');
+
+        flex-shrink: 0;
+        width: 100px;
+    }
+
+    &__ticker-list {
+        @include typo('t1');
+        @include textClamp(3);
+    }
+
+    &__action {
+        &-list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            flex-shrink: 0;
+        }
+
+        &-item {
+            @include typo('t1');
+            @include linkBase();
+
+            cursor: pointer;
+        }
+    }
+}

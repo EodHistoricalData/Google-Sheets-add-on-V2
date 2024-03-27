@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@google-sheets-add-on/home</title>
+
+        <link rel="stylesheet" href="/src/styles/index.scss">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body style="padding: 0 24px; max-width: 768px;">
+        <div class="modal-layout">
+            <div class="modal-layout__head">
+                <div class="modal-layout__title">
+                    <svg class="modal-layout__title-icon svg-icon">
+                        <use xlink:href="./icons/sprite.svg#pic-screener"></use>
+                    </svg>
+
+                    <div class="modal-layout__title-text">Screener Dispatcher</div>
+                </div>
+            </div>
+
+            <div class="modal-layout__body">
+                <form action="#">
+                    <div class="form-group">
+                        <div class="form-group__description">
+                            <strong>How to use</strong>: Create a new screener by pressing <strong>"Add new screener"</strong>. When the screener is ready, you can export its results to Sheets or perform an EOD Bulk request and Fundamental data bulk request. The result will also be exported to your sheets in a new page. Please allow us some time to perform the Bulk request - it might involve a lot of data. The window will be closed automatically once the data is ready.
+                            <br><br>
+                            Please note that one Screener request consumes 5 API calls.
+                        </div>
+
+                        <div class="form-group__body">
+                            <div class="form-row">
+                                <button class="btn btn_variant_secondary" type="button">
+                                    <div class="btn__text">Add new screener</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="screener-list">
+                            <div class="screener-list__label">List of screeners</div>
+
+                            <div class="screener-list__body">
+                                <div class="screener-item">
+                                    <div class="screener-item__id">Screener 0</div>
+
+                                    <div class="screener-item__ticker-list">CCJ.US, NATKY.US, SRUUF.US, NXE.US, UEC US, UEC US, NATKY.US, SRUUF.US, CCJ.US, NATKY.US, SRUUF.US, NXE.US, UEC US, UEC US, NATKY, CCJ.US, NATKY.US, SRUUF.US, NXE.US, UEC US, UEC US, NATKY.US, SRUUF.US, CCJ.US, NATKY.US, SRUUF.US, NXE.US, UEC US, UEC US, NATKY</div>
+
+                                    <div class="screener-item__action-list">
+                                        <div class="screener-item__action-item">Export 5 tickers to Sheets</div>
+                                        <div class="screener-item__action-item">Make Fundamental Bulk request</div>
+                                        <div class="screener-item__action-item">Make EOD bulk request</div>
+                                    </div>
+
+                                    <button class="btn btn_icon-only btn_variant_ghost" type="button">
+                                        <svg class="btn__icon svg-icon">
+                                            <use xlink:href="./icons/sprite.svg#cross"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="screener-item">
+                                    <div class="screener-item__id">Screener 1</div>
+
+                                    <div class="screener-item__ticker-list">CCJ.US, NATKY.US, SRUUF.US, NXE.US, UEC US, UEC US, NATKY.US, SRUUF.US, CCJ.US, NATKY.US, SRUUF.US, NXE.US, UEC US, UEC US, NATKY, CCJ.US, NATKY.US, SRUUF.US, NXE.US, UEC US, UEC US, NATKY.US, SRUUF.US, CCJ.US, NATKY.US, SRUUF.US, NXE.US, UEC US, UEC US, NATKY</div>
+
+                                    <div class="screener-item__action-list">
+                                        <div class="screener-item__action-item">Export 5 tickers to Sheets</div>
+                                        <div class="screener-item__action-item">Make Fundamental Bulk request</div>
+                                        <div class="screener-item__action-item">Make EOD bulk request</div>
+                                    </div>
+
+                                    <button class="btn btn_icon-only btn_variant_ghost" type="button">
+                                        <svg class="btn__icon svg-icon">
+                                            <use xlink:href="./icons/sprite.svg#cross"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script type="module" src="/src/scripts/index.js"></script>
+    </body>
+</html>

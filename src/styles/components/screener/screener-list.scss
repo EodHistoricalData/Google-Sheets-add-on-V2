@@ -1,0 +1,9 @@
+.screener-list {
+    &__label {
+        @include typo('t1');
+    }
+
+    &__body {
+        margin-top: 8px;
+    }
+}
