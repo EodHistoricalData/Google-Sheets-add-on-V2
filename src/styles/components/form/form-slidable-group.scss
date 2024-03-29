@@ -1,4 +1,6 @@
 .form-slidable-group {
+    width: 100%;
+
     &.-active {
         .form-slidable-group__head-icon {
             transform: rotate(180deg);

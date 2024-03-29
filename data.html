@@ -85,7 +85,9 @@
                         <div class="accordion">
                             <div class="accordion__item">
                                 <div class="accordion__item-head">
-                                    <div class="accordion__item-title">End-of-Day Historical Stock</div>
+                                    <div class="accordion__item-head-content">
+                                        <div class="accordion__item-title">End-of-Day Historical Stock</div>
+                                    </div>
 
                                     <svg class="accordion__item-icon svg-icon">
                                         <use xlink:href="./icons/sprite.svg#chevron-down"></use>
@@ -252,7 +254,9 @@
 
                             <div class="accordion__item">
                                 <div class="accordion__item-head">
-                                    <div class="accordion__item-title">Intraday Historical Data</div>
+                                    <div class="accordion__item-head-content">
+                                        <div class="accordion__item-title">Intraday Historical Data</div>
+                                    </div>
 
                                     <svg class="accordion__item-icon svg-icon">
                                         <use xlink:href="./icons/sprite.svg#chevron-down"></use>
@@ -475,7 +479,13 @@
 
                             <div class="accordion__item">
                                 <div class="accordion__item-head">
-                                    <div class="accordion__item-title">Fundamental Data</div>
+                                    <div class="accordion__item-head-content">
+                                        <div class="accordion__item-title">Fundamental Data</div>
+
+                                        <div class="tag tag_variant_warning">
+                                            <div class="tag__text">Limited</div>
+                                        </div>
+                                    </div>
 
                                     <svg class="accordion__item-icon svg-icon">
                                         <use xlink:href="./icons/sprite.svg#chevron-down"></use>
@@ -582,7 +592,13 @@
 
                             <div class="accordion__item">
                                 <div class="accordion__item-head">
-                                    <div class="accordion__item-title">Bulk Fundamental Data</div>
+                                    <div class="accordion__item-head-content">
+                                        <div class="accordion__item-title">Bulk Fundamental Data</div>
+
+                                        <div class="tag tag_variant_error">
+                                            <div class="tag__text">Not avalible</div>
+                                        </div>
+                                    </div>
 
                                     <svg class="accordion__item-icon svg-icon">
                                         <use xlink:href="./icons/sprite.svg#chevron-down"></use>
@@ -798,7 +814,9 @@
 
                             <div class="accordion__item">
                                 <div class="accordion__item-head">
-                                    <div class="accordion__item-title">Bulk For EOD</div>
+                                    <div class="accordion__item-head-content">
+                                        <div class="accordion__item-title">Bulk For EOD</div>
+                                    </div>
 
                                     <svg class="accordion__item-icon svg-icon">
                                         <use xlink:href="./icons/sprite.svg#chevron-down"></use>
@@ -985,7 +1003,9 @@
 
                             <div class="accordion__item">
                                 <div class="accordion__item-head">
-                                    <div class="accordion__item-title">ETF Data</div>
+                                    <div class="accordion__item-head-content">
+                                        <div class="accordion__item-title">ETF Data</div>
+                                    </div>
 
                                     <svg class="accordion__item-icon svg-icon">
                                         <use xlink:href="./icons/sprite.svg#chevron-down"></use>
@@ -1086,30 +1106,9 @@
 
                             <div class="accordion__item">
                                 <div class="accordion__item-head">
-                                    <div class="accordion__item-title">Options Data</div>
-
-                                    <svg class="accordion__item-icon svg-icon">
-                                        <use xlink:href="./icons/sprite.svg#chevron-down"></use>
-                                    </svg>
-                                </div>
-
-                                <div class="accordion__item-body">
-                                    <div class="accordion__item-body-inner">
-                                        <div class="accordion__item-body-inner-content">
-                                            <div class="accordion__item-description">
-                                                // ...
-                                            </div>
-
-                                            <!-- <div class="accordion__item-content">
-                                            </div> -->
-                                        </div>
+                                    <div class="accordion__item-head-content">
+                                        <div class="accordion__item-title">Options Data</div>
                                     </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion__item">
-                                <div class="accordion__item-head">
-                                    <div class="accordion__item-title">Technical indicators</div>
 
                                     <svg class="accordion__item-icon svg-icon">
                                         <use xlink:href="./icons/sprite.svg#chevron-down"></use>
@@ -1132,7 +1131,232 @@
 
                             <div class="accordion__item -active">
                                 <div class="accordion__item-head">
-                                    <div class="accordion__item-title">Stock Market Screener</div>
+                                    <div class="accordion__item-head-content">
+                                        <div class="accordion__item-title">Technical indicators</div>
+                                    </div>
+
+                                    <svg class="accordion__item-icon svg-icon">
+                                        <use xlink:href="./icons/sprite.svg#chevron-down"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="accordion__item-body">
+                                    <div class="accordion__item-body-inner">
+                                        <div class="accordion__item-body-inner-content">
+                                            <div class="accordion__item-description">
+                                                Each request consumes 5&nbsp;API calls.
+                                            </div>
+
+                                            <div class="accordion__item-content">
+                                                <form action="#">
+                                                    <div class="form-row">
+                                                        <div class="form-slidable-group slide-toggle">
+                                                            <div class="form-slidable-group__head slide-toggle__trigger">
+                                                                <div class="form-slidable-group__head-label">Search for company / ticker</div>
+
+                                                                <svg class="form-slidable-group__head-icon svg-icon">
+                                                                    <use xlink:href="./icons/sprite.svg#chevron-down"></use>
+                                                                </svg>
+                                                            </div>
+
+                                                            <div class="form-slidable-group__body slide-toggle__body">
+                                                                <div class="form-slidable-group__body-inner slide-toggle__body-inner">
+                                                                    <div class="form-slidable-group__body-inner-content">
+                                                                        <div class="form-row form-row_sm">
+                                                                            <div class="form-field input-text">
+                                                                                <div class="form-field__main">
+                                                                                    <div class="form-field__field input-text__field">
+                                                                                        <div class="input-text__bd"></div>
+                                                                                        <input class="form-field__input input-text__input" type="text" placeholder="AAPL">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-row form-row_sm">
+                                                                            <div class="form-field select-multiple">
+                                                                                <div class="form-field__main">
+                                                                                    <div class="form-field__field select-multiple__field">
+                                                                                        <div class="select-multiple__bd"></div>
+
+                                                                                        <select class="form-field__input select-multiple__input" multiple="">
+                                                                                            <option value="AAPL1">AAPL1</option>
+                                                                                            <option value="AAPL2">AAPL2</option>
+                                                                                            <option value="AAPL3">AAPL3</option>
+                                                                                            <option value="AAPL4">AAPL4</option>
+                                                                                            <option value="AAPL5">AAPL5</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <div class="form-row form-row_sm">
+                                                                            <button class="btn btn_variant_alternative" type="button">
+                                                                                Add to the list below
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-row">
+                                                        <div class="form-field input-text">
+                                                            <label class="form-field__label">Option ticker</label>
+
+                                                            <div class="form-field__main">
+                                                                <div class="form-field__field input-text__field">
+                                                                    <div class="input-text__bd"></div>
+                                                                    <input class="form-field__input input-text__input" type="text" placeholder="E.g. AAPL">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-row">
+                                                        <div class="form-field input-text">
+                                                            <label class="form-field__label">From</label>
+
+                                                            <div class="form-field__main">
+                                                                <div class="form-field__field input-text__field">
+                                                                    <div class="input-text__bd"></div>
+                                                                    <input class="form-field__input input-text__input input-mask" data-mask="date" type="text" placeholder="dd/mm/yyyy">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-row">
+                                                        <div class="form-field input-text">
+                                                            <label class="form-field__label">To</label>
+
+                                                            <div class="form-field__main">
+                                                                <div class="form-field__field input-text__field">
+                                                                    <div class="input-text__bd"></div>
+                                                                    <input class="form-field__input input-text__input input-mask" data-mask="date" type="text" placeholder="dd/mm/yyyy">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-row">
+                                                        <div class="form-field select">
+                                                            <label class="form-field__label">Order by date</label>
+
+                                                            <div class="form-field__main">
+                                                                <div class="form-field__field select__field">
+                                                                    <div class="select__bd"></div>
+
+                                                                    <svg class="select__arrow svg-icon">
+                                                                        <use xlink:href="./icons/sprite.svg#chevron-down"></use>
+                                                                    </svg>
+
+                                                                    <select class="form-field__input select__input">
+                                                                        <option value="a" selected="">Ascending</option>
+                                                                        <option value="d">Descending</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-row">
+                                                        <div class="form-field select">
+                                                            <label class="form-field__label">Technical Indicator</label>
+
+                                                            <div class="form-field__main">
+                                                                <div class="form-field__field select__field">
+                                                                    <div class="select__bd"></div>
+
+                                                                    <svg class="select__arrow svg-icon">
+                                                                        <use xlink:href="./icons/sprite.svg#chevron-down"></use>
+                                                                    </svg>
+
+                                                                    <select class="form-field__input select__input">
+                                                                        <option value="splitadjusted">Split Adjusted Data</option>
+                                                                        <option value="avgvol">Average Volume</option>
+                                                                        <option value="avgvolccy">Average Volume by Price</option>
+                                                                        <option selected="" value="sma">Simple Moving Average</option>
+                                                                        <option value="ema">Exponential Moving Average</option>
+                                                                        <option value="wma">Weighted Moving Average</option>
+                                                                        <option value="volatility">Volatility</option>
+                                                                        <option value="stochastic">Stochastic Technical Indicator</option>
+                                                                        <option value="rsi">Relative Strength Index</option>
+                                                                        <option value="stddev">Standard Deviation</option>
+                                                                        <option value="stochrsi">Stochastic Relative Strength Index</option>
+                                                                        <option value="slope">Slope (Linear Regression)</option>
+                                                                        <option value="dmi">Directional Movement Index</option>
+                                                                        <option value="adx">Average Directional Movement Index</option>
+                                                                        <option value="macd">Moving Average Convergence/Divergence</option>
+                                                                        <option value="atr">Average True Range</option>
+                                                                        <option value="cci">Commodity Channel Index</option>
+                                                                        <option value="sar">Parabolic SAR</option>
+                                                                        <option value="bbands">Bollinger Bands</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-row">
+                                                        <div class="form-field input-text">
+                                                            <label class="form-field__label">Period</label>
+
+                                                            <div class="form-field__main">
+                                                                <div class="form-field__field input-text__field">
+                                                                    <div class="input-text__bd"></div>
+                                                                    <input class="form-field__input input-text__input" type="number" placeholder="XX" value="50">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-row">
+                                                        <div class="form-field checkbox selection-primitive -error">
+                                                            <div class="form-field__main">
+                                                                <label class="form-field__field selection-primitive__field">
+                                                                    <div class="selection-primitive__input">
+                                                                        <input class="selection-primitive__native" type="checkbox">
+                                                                        <div class="selection-primitive__icon-box"></div>
+                                                                        <svg class="selection-primitive__icon-pic svg-icon">
+                                                                            <use xlink:href="./icons/sprite.svg#checkbox"></use>
+                                                                        </svg>
+                                                                    </div>
+
+                                                                    <div class="selection-primitive__content">
+                                                                        <div class="selection-primitive__label">
+                                                                            Build a chart
+                                                                        </div>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+
+                                                            <div class="form-field__response">error text</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-row">
+                                                        <div class="btn-list btn-list_center">
+                                                            <button class="btn btn_variant_secondary">
+                                                                <div class="btn__text">Insert data to a new sheet</div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion__item">
+                                <div class="accordion__item-head">
+                                    <div class="accordion__item-head-content">
+                                        <div class="accordion__item-title">Stock Market Screener</div>
+                                    </div>
 
                                     <svg class="accordion__item-icon svg-icon">
                                         <use xlink:href="./icons/sprite.svg#chevron-down"></use>
@@ -1150,6 +1374,36 @@
                                                 <div class="btn-list btn-list_center">
                                                     <button class="btn btn_variant_secondary">
                                                         <div class="btn__text">Screener Dispatcher</div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion__item">
+                                <div class="accordion__item-head">
+                                    <div class="accordion__item-head-content">
+                                        <div class="accordion__item-title">Live Stock Prices Data</div>
+                                    </div>
+
+                                    <svg class="accordion__item-icon svg-icon">
+                                        <use xlink:href="./icons/sprite.svg#chevron-down"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="accordion__item-body">
+                                    <div class="accordion__item-body-inner">
+                                        <div class="accordion__item-body-inner-content">
+                                            <div class="accordion__item-description">
+                                                We have real-time data with a delay of&nbsp;less than 50ms&nbsp;via WebSockets for the US market, FOREX, Cryptocurrencies. For US stocks our real-time data API supports&nbsp;pre-market and post-market hours(from 4 am to 8 pm EST).
+                                            </div>
+
+                                            <div class="accordion__item-content">
+                                                <div class="btn-list btn-list_center">
+                                                    <button class="btn btn_variant_secondary">
+                                                        <div class="btn__text">Start Real-time Dispatcher</div>
                                                     </button>
                                                 </div>
                                             </div>

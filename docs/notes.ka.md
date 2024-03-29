@@ -2,26 +2,18 @@
 
 ## ToDo
 - data;
-    - баджи;
-
-    + Intraday Historical Data;
-    + Fundamental Data;
-    + Bulk Fundamental Data;
-    + Bulk for EOD;
-    + ETF Data;
     - Options Data;
-    - Technical Indicators;
+        ! blocked ! design;
 
-    - Stock Market Screener;
+    - Live Stock Prices Data;
         - popup 1;
-        + popup 2;
+            ! blocked ! design;
 
-    - Stock Prices Data;
-        - popup 1;
         - popup 2;
+            ! blocked ! design;
 
 ## Обкашлять с ребзями
-- подвал модалки не будет выглядеть так, как хочется;
+Пусто...
 
 ## Жду от Саши
 Пусто...

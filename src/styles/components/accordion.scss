@@ -28,10 +28,15 @@
             user-select: none;
         }
 
+        &-head-content {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            gap: 8px;
+        }
+
         &-title {
             @include typo('t2', 'bold');
-
-            flex: 1;
         }
 
         &-icon {
