@@ -22,17 +22,104 @@
             <div class="form__body">
                 <div class="form-group">
                     <div class="form-group__title">Text filters</div>
-                    <div class="form-group__description">These are text fields. Separate inputs by coma ",” for multiple options.</div>
+                    <div class="form-group__description">These are text fields. Separate inputs by coma "," for multiple options.</div>
 
                     <div class="form-group__body">
                         <div class="form-row">
-                            <div class="form-field form-field_size_md input-text">
-                                <label class="form-field__label">Tickers:</label>
+                            <div class="form-field-group">
+                                <div class="form-field-group__label">
+                                    <div class="form-field-group__label-text">Search for company / ticker</div>
+                                </div>
+
+                                <div class="form-field-group__body">
+                                    <div class="form-row form-row_sm">
+                                        <div class="form-field input-text">
+                                            <div class="form-field__main">
+                                                <div class="form-field__field input-text__field">
+                                                    <div class="input-text__bd"></div>
+                                                    <input
+                                                        class="form-field__input input-text__input"
+                                                        type="text"
+                                                        placeholder="AAPL"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row form-row_sm">
+                                        <div class="form-field select-multiple">
+                                            <div class="form-field__main">
+                                                <div class="form-field__field select-multiple__field">
+                                                    <div class="select-multiple__bd"></div>
+
+                                                    <select class="form-field__input select-multiple__input" multiple>
+                                                        <option value="AAPL1">AAPL1</option>
+                                                        <option value="AAPL2">AAPL2</option>
+                                                        <option value="AAPL3">AAPL3</option>
+                                                        <option value="AAPL4">AAPL4</option>
+                                                        <option value="AAPL5">AAPL5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-row form-row_sm">
+                                        <button class="btn btn_variant_alternative" type="button">Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label class="form-field__label">List of tickers for request</label>
 
                                 <div class="form-field__main">
-                                    <div class="form-field__field input-text__field">
-                                        <div class="input-text__bd"></div>
-                                        <input class="form-field__input input-text__input" type="text" placeholder="APPL.US, TSLA.US">
+                                    <!-- <div class="form-field__empty">None</div> -->
+
+                                    <div class="tag-list tag-list_wrap">
+                                        <div class="tag tag_variant_alternative tag_has-action">
+                                            <div class="tag__text">AAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.US</div>
+
+                                            <svg class="tag__icon svg-icon">
+                                                <use xlink:href="./icons/sprite.svg#cross"></use>
+                                            </svg>
+                                        </div>
+
+                                        <div class="tag tag_variant_alternative tag_has-action">
+                                            <div class="tag__text">MSFT.US</div>
+
+                                            <svg class="tag__icon svg-icon">
+                                                <use xlink:href="./icons/sprite.svg#cross"></use>
+                                            </svg>
+                                        </div>
+
+                                        <div class="tag tag_variant_alternative tag_has-action">
+                                            <div class="tag__text">ABBA.US</div>
+
+                                            <svg class="tag__icon svg-icon">
+                                                <use xlink:href="./icons/sprite.svg#cross"></use>
+                                            </svg>
+                                        </div>
+
+                                        <div class="tag tag_variant_alternative tag_has-action">
+                                            <div class="tag__text">RETR</div>
+
+                                            <svg class="tag__icon svg-icon">
+                                                <use xlink:href="./icons/sprite.svg#cross"></use>
+                                            </svg>
+                                        </div>
+
+                                        <div class="tag tag_variant_alternative tag_has-action">
+                                            <div class="tag__text">MSFT.US</div>
+
+                                            <svg class="tag__icon svg-icon">
+                                                <use xlink:href="./icons/sprite.svg#cross"></use>
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -141,7 +228,7 @@
                                 </div>
                             </div>
 
-                            <div class="form-field form-field_size_md input-text">
+                            <div class="form-field input-text">
                                 <label class="form-field__label">Value</label>
 
                                 <div class="form-field__main">
@@ -198,7 +285,7 @@
                                 </div>
                             </div>
 
-                            <div class="form-field form-field_size_md input-text">
+                            <div class="form-field input-text">
                                 <div class="form-field__main">
                                     <div class="form-field__field input-text__field">
                                         <div class="input-text__bd"></div>
@@ -230,7 +317,8 @@
 
                     <div class="form-group__body">
                         <div class="form-row">
-                            <div class="form-field form-field_size_md select">
+                            <div class="form-field select">
+                                <label class="form-field__label">High / Low</label>
                                 <div class="form-field__main">
                                     <div class="form-field__field select__field">
                                         <div class="select__bd"></div>
@@ -240,17 +328,16 @@
                                         </svg>
 
                                         <select class="form-field__input select__input">
-                                            <option value="" selected></option>
+                                            <option value="" selected>None</option>
                                             <option value="1">New 200 days low</option>
                                             <option value="2">New 200 days high</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="form-row">
-                            <div class="form-field form-field_size_md select">
+                            <div class="form-field select">
+                                <label class="form-field__label">Book Value</label>
                                 <div class="form-field__main">
                                     <div class="form-field__field select__field">
                                         <div class="select__bd"></div>
@@ -260,7 +347,7 @@
                                         </svg>
 
                                         <select class="form-field__input select__input">
-                                            <option value="" selected></option>
+                                            <option value="" selected>None</option>
                                             <!-- !!! -->
                                             <option value="1">Negative book Value</option>
                                             <option value="2">Positive book Value</option>
@@ -268,10 +355,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="form-row">
-                            <div class="form-field form-field_size_md select">
+                            <div class="form-field select">
+                                <label class="form-field__label">Expectation</label>
                                 <div class="form-field__main">
                                     <div class="form-field__field select__field">
                                         <div class="select__bd"></div>
@@ -281,7 +367,7 @@
                                         </svg>
 
                                         <select class="form-field__input select__input">
-                                            <option value="" selected></option>
+                                            <option value="" selected>None</option>
                                             <option value="1">Lower than expected by Wall Street</option>
                                             <option value="2">Higher than expected by Wall Street</option>
                                         </select>
@@ -296,6 +382,7 @@
                     <div class="form-group__body">
                         <div class="form-row">
                             <div class="form-field form-field_size_md select">
+                                <label class="form-field__label">Sort by</label>
                                 <div class="form-field__main">
                                     <div class="form-field__field select__field">
                                         <div class="select__bd"></div>
@@ -305,7 +392,7 @@
                                         </svg>
 
                                         <select class="form-field__input select__input">
-                                            <option value="" selected>Sort by</option>
+                                            <option value="" selected>None</option>
                                             <option value="1">value-1</option>
                                             <option value="2">value-2</option>
                                             <option value="3">value-3</option>

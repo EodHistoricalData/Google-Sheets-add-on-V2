@@ -86,7 +86,7 @@
                             <div class="accordion__item">
                                 <div class="accordion__item-head">
                                     <div class="accordion__item-head-content">
-                                        <div class="accordion__item-title">End-of-Day Historical Stock</div>
+                                        <div class="accordion__item-title">End-of-Day Historical Data</div>
                                     </div>
 
                                     <svg class="accordion__item-icon svg-icon">
@@ -104,75 +104,100 @@
                                             <div class="accordion__item-content">
                                                 <form action="#">
                                                     <div class="form-row">
-                                                        <div class="form-slidable-group slide-toggle -active">
-                                                            <div class="form-slidable-group__head slide-toggle__trigger">
-                                                                <div class="form-slidable-group__head-label">Search for company / ticker</div>
-
-                                                                <svg class="form-slidable-group__head-icon svg-icon">
-                                                                    <use xlink:href="./icons/sprite.svg#chevron-down"></use>
-                                                                </svg>
+                                                        <div class="form-field-group">
+                                                            <div class="form-field-group__label">
+                                                                <div class="form-field-group__label-text">Search for company / ticker</div>
                                                             </div>
 
-                                                            <div class="form-slidable-group__body slide-toggle__body">
-                                                                <div class="form-slidable-group__body-inner slide-toggle__body-inner">
-                                                                    <div class="form-slidable-group__body-inner-content">
-                                                                        <div class="form-row form-row_sm">
-                                                                            <div class="form-field input-text">
-                                                                                <div class="form-field__main">
-                                                                                    <div class="form-field__field input-text__field">
-                                                                                        <div class="input-text__bd"></div>
-                                                                                        <input
-                                                                                            class="form-field__input input-text__input"
-                                                                                            type="text"
-                                                                                            placeholder="AAPL"
-                                                                                        />
-                                                                                    </div>
-                                                                                </div>
+                                                            <div class="form-field-group__body">
+                                                                <div class="form-row form-row_sm">
+                                                                    <div class="form-field input-text">
+                                                                        <div class="form-field__main">
+                                                                            <div class="form-field__field input-text__field">
+                                                                                <div class="input-text__bd"></div>
+                                                                                <input
+                                                                                    class="form-field__input input-text__input"
+                                                                                    type="text"
+                                                                                    placeholder="AAPL"
+                                                                                />
                                                                             </div>
-                                                                        </div>
-
-                                                                        <div class="form-row form-row_sm">
-                                                                            <div class="form-field select-multiple">
-                                                                                <div class="form-field__main">
-                                                                                    <div class="form-field__field select-multiple__field">
-                                                                                        <div class="select-multiple__bd"></div>
-
-                                                                                        <select class="form-field__input select-multiple__input" multiple>
-                                                                                            <option value="AAPL1">AAPL1</option>
-                                                                                            <option value="AAPL2">AAPL2</option>
-                                                                                            <option value="AAPL3">AAPL3</option>
-                                                                                            <option value="AAPL4">AAPL4</option>
-                                                                                            <option value="AAPL5">AAPL5</option>
-                                                                                        </select>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
-
-                                                                        <div class="form-row form-row_sm">
-                                                                            <button class="btn btn_variant_alternative" type="button">
-                                                                                Add to the list below
-                                                                            </button>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+
+                                                                <div class="form-row form-row_sm">
+                                                                    <div class="form-field select-multiple">
+                                                                        <div class="form-field__main">
+                                                                            <div class="form-field__field select-multiple__field">
+                                                                                <div class="select-multiple__bd"></div>
+
+                                                                                <select class="form-field__input select-multiple__input" multiple>
+                                                                                    <option value="AAPL1">AAPL1</option>
+                                                                                    <option value="AAPL2">AAPL2</option>
+                                                                                    <option value="AAPL3">AAPL3</option>
+                                                                                    <option value="AAPL4">AAPL4</option>
+                                                                                    <option value="AAPL5">AAPL5</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="form-row form-row_sm">
+                                                                    <button class="btn btn_variant_alternative" type="button">Add</button>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
 
                                                     <div class="form-row">
-                                                        <div class="form-field input-text">
+                                                        <div class="form-field">
                                                             <label class="form-field__label">List of tickers for request</label>
 
                                                             <div class="form-field__main">
-                                                                <div class="form-field__field input-text__field">
-                                                                    <div class="input-text__bd"></div>
-                                                                    <input
-                                                                        class="form-field__input input-text__input"
-                                                                        type="text"
-                                                                        placeholder="E.g. AAPL"
-                                                                    />
+                                                                <!-- <div class="form-field__empty">None</div> -->
+
+                                                                <div class="tag-list tag-list_wrap">
+                                                                    <div class="tag tag_variant_alternative tag_has-action">
+                                                                        <div class="tag__text">AAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.US</div>
+
+                                                                        <svg class="tag__icon svg-icon">
+                                                                            <use xlink:href="./icons/sprite.svg#cross"></use>
+                                                                        </svg>
+                                                                    </div>
+
+                                                                    <div class="tag tag_variant_alternative tag_has-action">
+                                                                        <div class="tag__text">MSFT.US</div>
+
+                                                                        <svg class="tag__icon svg-icon">
+                                                                            <use xlink:href="./icons/sprite.svg#cross"></use>
+                                                                        </svg>
+                                                                    </div>
+
+                                                                    <div class="tag tag_variant_alternative tag_has-action">
+                                                                        <div class="tag__text">ABBA.US</div>
+
+                                                                        <svg class="tag__icon svg-icon">
+                                                                            <use xlink:href="./icons/sprite.svg#cross"></use>
+                                                                        </svg>
+                                                                    </div>
+
+                                                                    <div class="tag tag_variant_alternative tag_has-action">
+                                                                        <div class="tag__text">RETR</div>
+
+                                                                        <svg class="tag__icon svg-icon">
+                                                                            <use xlink:href="./icons/sprite.svg#cross"></use>
+                                                                        </svg>
+                                                                    </div>
+
+                                                                    <div class="tag tag_variant_alternative tag_has-action">
+                                                                        <div class="tag__text">MSFT.US</div>
+
+                                                                        <svg class="tag__icon svg-icon">
+                                                                            <use xlink:href="./icons/sprite.svg#cross"></use>
+                                                                        </svg>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -273,76 +298,59 @@
                                             <div class="accordion__item-content">
                                                 <form action="#">
                                                     <div class="form-row">
-                                                        <div class="form-slidable-group slide-toggle">
-                                                            <div class="form-slidable-group__head slide-toggle__trigger">
-                                                                <div class="form-slidable-group__head-label">Search for company / ticker</div>
-
-                                                                <svg class="form-slidable-group__head-icon svg-icon">
-                                                                    <use xlink:href="./icons/sprite.svg#chevron-down"></use>
-                                                                </svg>
+                                                        <div class="form-field-group">
+                                                            <div class="form-field-group__label">
+                                                                <div class="form-field-group__label-text">Search for company / ticker</div>
                                                             </div>
 
-                                                            <div class="form-slidable-group__body slide-toggle__body">
-                                                                <div class="form-slidable-group__body-inner slide-toggle__body-inner">
-                                                                    <div class="form-slidable-group__body-inner-content">
-                                                                        <div class="form-row form-row_sm">
-                                                                            <div class="form-field input-text">
-                                                                                <div class="form-field__main">
-                                                                                    <div class="form-field__field input-text__field">
-                                                                                        <div class="input-text__bd"></div>
-                                                                                        <input
-                                                                                            class="form-field__input input-text__input"
-                                                                                            type="text"
-                                                                                            placeholder="AAPL"
-                                                                                        />
-                                                                                    </div>
-                                                                                </div>
+                                                            <div class="form-field-group__body">
+                                                                <div class="form-row form-row_sm">
+                                                                    <div class="form-field input-text">
+                                                                        <div class="form-field__main">
+                                                                            <div class="form-field__field input-text__field">
+                                                                                <div class="input-text__bd"></div>
+                                                                                <input
+                                                                                    class="form-field__input input-text__input"
+                                                                                    type="text"
+                                                                                    placeholder="AAPL"
+                                                                                />
                                                                             </div>
-                                                                        </div>
-
-                                                                        <div class="form-row form-row_sm">
-                                                                            <div class="form-field select-multiple">
-                                                                                <div class="form-field__main">
-                                                                                    <div class="form-field__field select-multiple__field">
-                                                                                        <div class="select-multiple__bd"></div>
-
-                                                                                        <select class="form-field__input select-multiple__input" multiple>
-                                                                                            <option value="AAPL1">AAPL1</option>
-                                                                                            <option value="AAPL2">AAPL2</option>
-                                                                                            <option value="AAPL3">AAPL3</option>
-                                                                                            <option value="AAPL4">AAPL4</option>
-                                                                                            <option value="AAPL5">AAPL5</option>
-                                                                                        </select>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
-
-                                                                        <div class="form-row form-row_sm">
-                                                                            <button class="btn btn_variant_alternative" type="button">
-                                                                                Add to the list below
-                                                                            </button>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+
+                                                                <div class="form-row form-row_sm">
+                                                                    <div class="form-field select-multiple">
+                                                                        <div class="form-field__main">
+                                                                            <div class="form-field__field select-multiple__field">
+                                                                                <div class="select-multiple__bd"></div>
+
+                                                                                <select class="form-field__input select-multiple__input" multiple>
+                                                                                    <option value="AAPL1">AAPL1</option>
+                                                                                    <option value="AAPL2">AAPL2</option>
+                                                                                    <option value="AAPL3">AAPL3</option>
+                                                                                    <option value="AAPL4">AAPL4</option>
+                                                                                    <option value="AAPL5">AAPL5</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="form-row form-row_sm">
+                                                                    <button class="btn btn_variant_alternative" type="button">Add</button>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
 
                                                     <div class="form-row">
-                                                        <div class="form-field input-text">
+                                                        <div class="form-field">
                                                             <label class="form-field__label">List of tickers for request</label>
 
                                                             <div class="form-field__main">
-                                                                <div class="form-field__field input-text__field">
-                                                                    <div class="input-text__bd"></div>
-                                                                    <input
-                                                                        class="form-field__input input-text__input"
-                                                                        type="text"
-                                                                        placeholder="E.g. AAPL"
-                                                                    />
-                                                                </div>
+                                                                <div class="form-field__empty">None</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -502,76 +510,59 @@
                                             <div class="accordion__item-content">
                                                 <form action="#">
                                                     <div class="form-row">
-                                                        <div class="form-slidable-group slide-toggle">
-                                                            <div class="form-slidable-group__head slide-toggle__trigger">
-                                                                <div class="form-slidable-group__head-label">Search for company / ticker</div>
-
-                                                                <svg class="form-slidable-group__head-icon svg-icon">
-                                                                    <use xlink:href="./icons/sprite.svg#chevron-down"></use>
-                                                                </svg>
+                                                        <div class="form-field-group">
+                                                            <div class="form-field-group__label">
+                                                                <div class="form-field-group__label-text">Search for company / ticker</div>
                                                             </div>
 
-                                                            <div class="form-slidable-group__body slide-toggle__body">
-                                                                <div class="form-slidable-group__body-inner slide-toggle__body-inner">
-                                                                    <div class="form-slidable-group__body-inner-content">
-                                                                        <div class="form-row form-row_sm">
-                                                                            <div class="form-field input-text">
-                                                                                <div class="form-field__main">
-                                                                                    <div class="form-field__field input-text__field">
-                                                                                        <div class="input-text__bd"></div>
-                                                                                        <input
-                                                                                            class="form-field__input input-text__input"
-                                                                                            type="text"
-                                                                                            placeholder="AAPL"
-                                                                                        />
-                                                                                    </div>
-                                                                                </div>
+                                                            <div class="form-field-group__body">
+                                                                <div class="form-row form-row_sm">
+                                                                    <div class="form-field input-text">
+                                                                        <div class="form-field__main">
+                                                                            <div class="form-field__field input-text__field">
+                                                                                <div class="input-text__bd"></div>
+                                                                                <input
+                                                                                    class="form-field__input input-text__input"
+                                                                                    type="text"
+                                                                                    placeholder="AAPL"
+                                                                                />
                                                                             </div>
-                                                                        </div>
-
-                                                                        <div class="form-row form-row_sm">
-                                                                            <div class="form-field select-multiple">
-                                                                                <div class="form-field__main">
-                                                                                    <div class="form-field__field select-multiple__field">
-                                                                                        <div class="select-multiple__bd"></div>
-
-                                                                                        <select class="form-field__input select-multiple__input" multiple>
-                                                                                            <option value="AAPL1">AAPL1</option>
-                                                                                            <option value="AAPL2">AAPL2</option>
-                                                                                            <option value="AAPL3">AAPL3</option>
-                                                                                            <option value="AAPL4">AAPL4</option>
-                                                                                            <option value="AAPL5">AAPL5</option>
-                                                                                        </select>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
-
-                                                                        <div class="form-row form-row_sm">
-                                                                            <button class="btn btn_variant_alternative" type="button">
-                                                                                Add to the list below
-                                                                            </button>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+
+                                                                <div class="form-row form-row_sm">
+                                                                    <div class="form-field select-multiple">
+                                                                        <div class="form-field__main">
+                                                                            <div class="form-field__field select-multiple__field">
+                                                                                <div class="select-multiple__bd"></div>
+
+                                                                                <select class="form-field__input select-multiple__input" multiple>
+                                                                                    <option value="AAPL1">AAPL1</option>
+                                                                                    <option value="AAPL2">AAPL2</option>
+                                                                                    <option value="AAPL3">AAPL3</option>
+                                                                                    <option value="AAPL4">AAPL4</option>
+                                                                                    <option value="AAPL5">AAPL5</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="form-row form-row_sm">
+                                                                    <button class="btn btn_variant_alternative" type="button">Add</button>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
 
                                                     <div class="form-row">
-                                                        <div class="form-field input-text">
+                                                        <div class="form-field">
                                                             <label class="form-field__label">List of tickers for request</label>
 
                                                             <div class="form-field__main">
-                                                                <div class="form-field__field input-text__field">
-                                                                    <div class="input-text__bd"></div>
-                                                                    <input
-                                                                        class="form-field__input input-text__input"
-                                                                        type="text"
-                                                                        placeholder="E.g. AAPL"
-                                                                    />
-                                                                </div>
+                                                                <div class="form-field__empty">None</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -690,68 +681,59 @@
                                                     </div>
 
                                                     <div class="form-row" style="display: none;">
-                                                        <div class="form-slidable-group slide-toggle">
-                                                            <div class="form-slidable-group__head slide-toggle__trigger">
-                                                                <div class="form-slidable-group__head-label">Search for company / ticker</div>
-
-                                                                <svg class="form-slidable-group__head-icon svg-icon">
-                                                                    <use xlink:href="./icons/sprite.svg#chevron-down"></use>
-                                                                </svg>
+                                                        <div class="form-field-group">
+                                                            <div class="form-field-group__label">
+                                                                <div class="form-field-group__label-text">Search for company / ticker</div>
                                                             </div>
 
-                                                            <div class="form-slidable-group__body slide-toggle__body">
-                                                                <div class="form-slidable-group__body-inner slide-toggle__body-inner">
-                                                                    <div class="form-slidable-group__body-inner-content">
-                                                                        <div class="form-row form-row_sm">
-                                                                            <div class="form-field input-text">
-                                                                                <div class="form-field__main">
-                                                                                    <div class="form-field__field input-text__field">
-                                                                                        <div class="input-text__bd"></div>
-                                                                                        <input class="form-field__input input-text__input" type="text" placeholder="AAPL">
-                                                                                    </div>
-                                                                                </div>
+                                                            <div class="form-field-group__body">
+                                                                <div class="form-row form-row_sm">
+                                                                    <div class="form-field input-text">
+                                                                        <div class="form-field__main">
+                                                                            <div class="form-field__field input-text__field">
+                                                                                <div class="input-text__bd"></div>
+                                                                                <input
+                                                                                    class="form-field__input input-text__input"
+                                                                                    type="text"
+                                                                                    placeholder="AAPL"
+                                                                                />
                                                                             </div>
-                                                                        </div>
-
-                                                                        <div class="form-row form-row_sm">
-                                                                            <div class="form-field select-multiple">
-                                                                                <div class="form-field__main">
-                                                                                    <div class="form-field__field select-multiple__field">
-                                                                                        <div class="select-multiple__bd"></div>
-
-                                                                                        <select class="form-field__input select-multiple__input" multiple="">
-                                                                                            <option value="AAPL1">AAPL1</option>
-                                                                                            <option value="AAPL2">AAPL2</option>
-                                                                                            <option value="AAPL3">AAPL3</option>
-                                                                                            <option value="AAPL4">AAPL4</option>
-                                                                                            <option value="AAPL5">AAPL5</option>
-                                                                                        </select>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
-
-                                                                        <div class="form-row form-row_sm">
-                                                                            <button class="btn btn_variant_alternative" type="button">
-                                                                                Add to the list below
-                                                                            </button>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+
+                                                                <div class="form-row form-row_sm">
+                                                                    <div class="form-field select-multiple">
+                                                                        <div class="form-field__main">
+                                                                            <div class="form-field__field select-multiple__field">
+                                                                                <div class="select-multiple__bd"></div>
+
+                                                                                <select class="form-field__input select-multiple__input" multiple>
+                                                                                    <option value="AAPL1">AAPL1</option>
+                                                                                    <option value="AAPL2">AAPL2</option>
+                                                                                    <option value="AAPL3">AAPL3</option>
+                                                                                    <option value="AAPL4">AAPL4</option>
+                                                                                    <option value="AAPL5">AAPL5</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="form-row form-row_sm">
+                                                                    <button class="btn btn_variant_alternative" type="button">Add</button>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
 
                                                     <div class="form-row" style="display: none;">
-                                                        <div class="form-field input-text">
+                                                        <div class="form-field">
                                                             <label class="form-field__label">List of tickers for request</label>
 
                                                             <div class="form-field__main">
-                                                                <div class="form-field__field input-text__field">
-                                                                    <div class="input-text__bd"></div>
-                                                                    <input class="form-field__input input-text__input" type="text" placeholder="E.g. AAPL">
-                                                                </div>
+                                                                <div class="form-field__empty">None</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -908,68 +890,59 @@
                                                     </div>
 
                                                     <div class="form-row" style="display: none;">
-                                                        <div class="form-slidable-group slide-toggle">
-                                                            <div class="form-slidable-group__head slide-toggle__trigger">
-                                                                <div class="form-slidable-group__head-label">Search for company / ticker</div>
-
-                                                                <svg class="form-slidable-group__head-icon svg-icon">
-                                                                    <use xlink:href="./icons/sprite.svg#chevron-down"></use>
-                                                                </svg>
+                                                        <div class="form-field-group">
+                                                            <div class="form-field-group__label">
+                                                                <div class="form-field-group__label-text">Search for company / ticker</div>
                                                             </div>
 
-                                                            <div class="form-slidable-group__body slide-toggle__body">
-                                                                <div class="form-slidable-group__body-inner slide-toggle__body-inner">
-                                                                    <div class="form-slidable-group__body-inner-content">
-                                                                        <div class="form-row form-row_sm">
-                                                                            <div class="form-field input-text">
-                                                                                <div class="form-field__main">
-                                                                                    <div class="form-field__field input-text__field">
-                                                                                        <div class="input-text__bd"></div>
-                                                                                        <input class="form-field__input input-text__input" type="text" placeholder="AAPL">
-                                                                                    </div>
-                                                                                </div>
+                                                            <div class="form-field-group__body">
+                                                                <div class="form-row form-row_sm">
+                                                                    <div class="form-field input-text">
+                                                                        <div class="form-field__main">
+                                                                            <div class="form-field__field input-text__field">
+                                                                                <div class="input-text__bd"></div>
+                                                                                <input
+                                                                                    class="form-field__input input-text__input"
+                                                                                    type="text"
+                                                                                    placeholder="AAPL"
+                                                                                />
                                                                             </div>
-                                                                        </div>
-
-                                                                        <div class="form-row form-row_sm">
-                                                                            <div class="form-field select-multiple">
-                                                                                <div class="form-field__main">
-                                                                                    <div class="form-field__field select-multiple__field">
-                                                                                        <div class="select-multiple__bd"></div>
-
-                                                                                        <select class="form-field__input select-multiple__input" multiple="">
-                                                                                            <option value="AAPL1">AAPL1</option>
-                                                                                            <option value="AAPL2">AAPL2</option>
-                                                                                            <option value="AAPL3">AAPL3</option>
-                                                                                            <option value="AAPL4">AAPL4</option>
-                                                                                            <option value="AAPL5">AAPL5</option>
-                                                                                        </select>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
-
-                                                                        <div class="form-row form-row_sm">
-                                                                            <button class="btn btn_variant_alternative" type="button">
-                                                                                Add to the list below
-                                                                            </button>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+
+                                                                <div class="form-row form-row_sm">
+                                                                    <div class="form-field select-multiple">
+                                                                        <div class="form-field__main">
+                                                                            <div class="form-field__field select-multiple__field">
+                                                                                <div class="select-multiple__bd"></div>
+
+                                                                                <select class="form-field__input select-multiple__input" multiple>
+                                                                                    <option value="AAPL1">AAPL1</option>
+                                                                                    <option value="AAPL2">AAPL2</option>
+                                                                                    <option value="AAPL3">AAPL3</option>
+                                                                                    <option value="AAPL4">AAPL4</option>
+                                                                                    <option value="AAPL5">AAPL5</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="form-row form-row_sm">
+                                                                    <button class="btn btn_variant_alternative" type="button">Add</button>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
 
                                                     <div class="form-row" style="display: none;">
-                                                        <div class="form-field input-text">
+                                                        <div class="form-field">
                                                             <label class="form-field__label">List of tickers for request</label>
 
                                                             <div class="form-field__main">
-                                                                <div class="form-field__field input-text__field">
-                                                                    <div class="input-text__bd"></div>
-                                                                    <input class="form-field__input input-text__input" type="text" placeholder="E.g. AAPL">
-                                                                </div>
+                                                                <div class="form-field__empty">None</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1022,55 +995,59 @@
                                             <div class="accordion__item-content">
                                                 <form action="#">
                                                     <div class="form-row">
-                                                        <div class="form-slidable-group slide-toggle">
-                                                            <div class="form-slidable-group__head slide-toggle__trigger">
-                                                                <div class="form-slidable-group__head-label">Search for ETF ticker</div>
-
-                                                                <svg class="form-slidable-group__head-icon svg-icon">
-                                                                    <use xlink:href="./icons/sprite.svg#chevron-down"></use>
-                                                                </svg>
+                                                        <div class="form-field-group">
+                                                            <div class="form-field-group__label">
+                                                                <div class="form-field-group__label-text">Search for company / ticker</div>
                                                             </div>
 
-                                                            <div class="form-slidable-group__body slide-toggle__body">
-                                                                <div class="form-slidable-group__body-inner slide-toggle__body-inner">
-                                                                    <div class="form-slidable-group__body-inner-content">
-                                                                        <div class="form-row form-row_sm">
-                                                                            <div class="form-field input-text">
-                                                                                <div class="form-field__main">
-                                                                                    <div class="form-field__field input-text__field">
-                                                                                        <div class="input-text__bd"></div>
-                                                                                        <input class="form-field__input input-text__input" type="text" placeholder="AAPL">
-                                                                                    </div>
-                                                                                </div>
+                                                            <div class="form-field-group__body">
+                                                                <div class="form-row form-row_sm">
+                                                                    <div class="form-field input-text">
+                                                                        <div class="form-field__main">
+                                                                            <div class="form-field__field input-text__field">
+                                                                                <div class="input-text__bd"></div>
+                                                                                <input
+                                                                                    class="form-field__input input-text__input"
+                                                                                    type="text"
+                                                                                    placeholder="AAPL"
+                                                                                />
                                                                             </div>
-                                                                        </div>
-
-                                                                        <div class="form-row form-row_sm">
-                                                                            <div class="form-field select-multiple">
-                                                                                <div class="form-field__main">
-                                                                                    <div class="form-field__field select-multiple__field">
-                                                                                        <div class="select-multiple__bd"></div>
-
-                                                                                        <select class="form-field__input select-multiple__input" multiple="">
-                                                                                            <option value="AAPL1">AAPL1</option>
-                                                                                            <option value="AAPL2">AAPL2</option>
-                                                                                            <option value="AAPL3">AAPL3</option>
-                                                                                            <option value="AAPL4">AAPL4</option>
-                                                                                            <option value="AAPL5">AAPL5</option>
-                                                                                        </select>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
-
-                                                                        <div class="form-row form-row_sm">
-                                                                            <button class="btn btn_variant_alternative" type="button">
-                                                                                Add to the list below
-                                                                            </button>
                                                                         </div>
                                                                     </div>
                                                                 </div>
+
+                                                                <div class="form-row form-row_sm">
+                                                                    <div class="form-field select-multiple">
+                                                                        <div class="form-field__main">
+                                                                            <div class="form-field__field select-multiple__field">
+                                                                                <div class="select-multiple__bd"></div>
+
+                                                                                <select class="form-field__input select-multiple__input" multiple>
+                                                                                    <option value="AAPL1">AAPL1</option>
+                                                                                    <option value="AAPL2">AAPL2</option>
+                                                                                    <option value="AAPL3">AAPL3</option>
+                                                                                    <option value="AAPL4">AAPL4</option>
+                                                                                    <option value="AAPL5">AAPL5</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="form-row form-row_sm">
+                                                                    <button class="btn btn_variant_alternative" type="button">Add</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-row">
+                                                        <div class="form-field">
+                                                            <label class="form-field__label">List of tickers for request</label>
+
+                                                            <div class="form-field__main">
+                                                                <div class="form-field__empty">None</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1104,7 +1081,7 @@
                                 </div>
                             </div>
 
-                            <div class="accordion__item">
+                            <!-- <div class="accordion__item">
                                 <div class="accordion__item-head">
                                     <div class="accordion__item-head-content">
                                         <div class="accordion__item-title">Options Data</div>
@@ -1122,14 +1099,15 @@
                                                 // ...
                                             </div>
 
-                                            <!-- <div class="accordion__item-content">
-                                            </div> -->
+                                            <div class="accordion__item-content">
+                                                // ...
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
-                            <div class="accordion__item -active">
+                            <div class="accordion__item">
                                 <div class="accordion__item-head">
                                     <div class="accordion__item-head-content">
                                         <div class="accordion__item-title">Technical indicators</div>
@@ -1150,55 +1128,59 @@
                                             <div class="accordion__item-content">
                                                 <form action="#">
                                                     <div class="form-row">
-                                                        <div class="form-slidable-group slide-toggle">
-                                                            <div class="form-slidable-group__head slide-toggle__trigger">
-                                                                <div class="form-slidable-group__head-label">Search for company / ticker</div>
-
-                                                                <svg class="form-slidable-group__head-icon svg-icon">
-                                                                    <use xlink:href="./icons/sprite.svg#chevron-down"></use>
-                                                                </svg>
+                                                        <div class="form-field-group">
+                                                            <div class="form-field-group__label">
+                                                                <div class="form-field-group__label-text">Search for company / ticker</div>
                                                             </div>
 
-                                                            <div class="form-slidable-group__body slide-toggle__body">
-                                                                <div class="form-slidable-group__body-inner slide-toggle__body-inner">
-                                                                    <div class="form-slidable-group__body-inner-content">
-                                                                        <div class="form-row form-row_sm">
-                                                                            <div class="form-field input-text">
-                                                                                <div class="form-field__main">
-                                                                                    <div class="form-field__field input-text__field">
-                                                                                        <div class="input-text__bd"></div>
-                                                                                        <input class="form-field__input input-text__input" type="text" placeholder="AAPL">
-                                                                                    </div>
-                                                                                </div>
+                                                            <div class="form-field-group__body">
+                                                                <div class="form-row form-row_sm">
+                                                                    <div class="form-field input-text">
+                                                                        <div class="form-field__main">
+                                                                            <div class="form-field__field input-text__field">
+                                                                                <div class="input-text__bd"></div>
+                                                                                <input
+                                                                                    class="form-field__input input-text__input"
+                                                                                    type="text"
+                                                                                    placeholder="AAPL"
+                                                                                />
                                                                             </div>
-                                                                        </div>
-
-                                                                        <div class="form-row form-row_sm">
-                                                                            <div class="form-field select-multiple">
-                                                                                <div class="form-field__main">
-                                                                                    <div class="form-field__field select-multiple__field">
-                                                                                        <div class="select-multiple__bd"></div>
-
-                                                                                        <select class="form-field__input select-multiple__input" multiple="">
-                                                                                            <option value="AAPL1">AAPL1</option>
-                                                                                            <option value="AAPL2">AAPL2</option>
-                                                                                            <option value="AAPL3">AAPL3</option>
-                                                                                            <option value="AAPL4">AAPL4</option>
-                                                                                            <option value="AAPL5">AAPL5</option>
-                                                                                        </select>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
-
-                                                                        <div class="form-row form-row_sm">
-                                                                            <button class="btn btn_variant_alternative" type="button">
-                                                                                Add to the list below
-                                                                            </button>
                                                                         </div>
                                                                     </div>
                                                                 </div>
+
+                                                                <div class="form-row form-row_sm">
+                                                                    <div class="form-field select-multiple">
+                                                                        <div class="form-field__main">
+                                                                            <div class="form-field__field select-multiple__field">
+                                                                                <div class="select-multiple__bd"></div>
+
+                                                                                <select class="form-field__input select-multiple__input" multiple>
+                                                                                    <option value="AAPL1">AAPL1</option>
+                                                                                    <option value="AAPL2">AAPL2</option>
+                                                                                    <option value="AAPL3">AAPL3</option>
+                                                                                    <option value="AAPL4">AAPL4</option>
+                                                                                    <option value="AAPL5">AAPL5</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="form-row form-row_sm">
+                                                                    <button class="btn btn_variant_alternative" type="button">Add</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-row">
+                                                        <div class="form-field">
+                                                            <label class="form-field__label">List of tickers for request</label>
+
+                                                            <div class="form-field__main">
+                                                                <div class="form-field__empty">None</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1372,9 +1354,9 @@
 
                                             <div class="accordion__item-content">
                                                 <div class="btn-list btn-list_center">
-                                                    <button class="btn btn_variant_secondary">
+                                                    <a class="btn btn_variant_secondary" href="./modal-screener-dispatcher.html">
                                                         <div class="btn__text">Screener Dispatcher</div>
-                                                    </button>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1382,10 +1364,10 @@
                                 </div>
                             </div>
 
-                            <div class="accordion__item">
+                            <div class="accordion__item -active">
                                 <div class="accordion__item-head">
                                     <div class="accordion__item-head-content">
-                                        <div class="accordion__item-title">Live Stock Prices Data</div>
+                                        <div class="accordion__item-title">Real-time Stock Prices Data</div>
                                     </div>
 
                                     <svg class="accordion__item-icon svg-icon">
@@ -1402,9 +1384,9 @@
 
                                             <div class="accordion__item-content">
                                                 <div class="btn-list btn-list_center">
-                                                    <button class="btn btn_variant_secondary">
+                                                    <a class="btn btn_variant_secondary" href="./modal-live-dispatcher.html">
                                                         <div class="btn__text">Start Real-time Dispatcher</div>
-                                                    </button>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>

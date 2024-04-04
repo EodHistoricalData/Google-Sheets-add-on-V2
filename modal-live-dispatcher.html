@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@google-sheets-add-on/home</title>
+
+        <link rel="stylesheet" href="/src/styles/index.scss">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body style="padding: 0 24px; max-width: 768px;">
+        <div class="modal-layout">
+            <div class="modal-layout__head">
+                <div class="modal-layout__title">
+                    <svg class="modal-layout__title-icon svg-icon">
+                        <use xlink:href="./icons/sprite.svg#pic-dispatcher"></use>
+                    </svg>
+
+                    <div class="modal-layout__title-text">Live (Delayed) Dispatcher</div>
+                </div>
+            </div>
+
+            <div class="modal-layout__body">
+                <form action="#">
+                    <div class="form-group">
+                        <div class="form-group__description">
+                            <strong>How to use</strong>: Create a new Live stream by pressing <strong>"Add live stream"</strong>. When the stream is ready, by switching it <strong>"On"</strong>, a live (delayed) data will be added to a new sheet. Data is delivered in 1-minute interval and with a 15-20 minute delay.
+
+                            <br><br>
+                            <strong>Important</strong>. If the exchange is closed, the request will return the last traded price.
+                        </div>
+
+                        <div class="form-group__body">
+                            <div class="form-row">
+                                <a class="btn btn_variant_secondary" href="./modal-new-live-dispatcher.html">
+                                    <div class="btn__text">Add live stream</div>
+                                </a>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="notice notice_status_warning">
+                                    <svg class="notice__icon svg-icon">
+                                        <use xlink:href="./icons/sprite.svg#status-warning"></use>
+                                    </svg>
+
+                                    <div class="notice__text">
+                                        The Screener is not available in the free plan. Upgrade to the 'All World Extended' or 'All-In-One' data packages to access the Screener feature. See our plans <a href="#">here</a>.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="stream-list">
+                            <div class="stream-list__label">
+                                <div class="stream-list__label-text">List of streams</div>
+                                <div class="stream-list__label-action-list">
+                                    <div class="stream-list__label-action-item stream-list__label-action-item_variant_success">
+                                        <svg class="stream-list__label-action-icon svg-icon">
+                                            <use xlink:href="./icons/sprite.svg#play"></use>
+                                        </svg>
+
+                                        <div class="stream-list__label-action-text">Start all</div>
+                                    </div>
+
+                                    <div class="stream-list__label-action-item stream-list__label-action-item_variant_danger">
+                                        <svg class="stream-list__label-action-icon svg-icon">
+                                            <use xlink:href="./icons/sprite.svg#stop"></use>
+                                        </svg>
+
+                                        <div class="stream-list__label-action-text">Stop all</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="stream-list__body">
+                                <div class="stream-item">
+                                    <div class="stream-item__id">Stream 1</div>
+
+                                    <div class="stream-item__ticker-list">CCJ.US, NATKY.US, SRUUF.US, NXE.US, UEC US, UEC US, NATKY.US, SRUUF.US</div>
+
+                                    <div class="stream-item__period">
+                                        <label class="stream-item__period-label">Period (min)</label>
+
+                                        <div class="stream-item__period-input form-field input-text">
+                                            <div class="form-field__main">
+                                                <div class="form-field__field input-text__field">
+                                                    <div class="input-text__bd"></div>
+                                                    <input class="form-field__input input-text__input" type="number" placeholder="XX" value="1" min="1" step="1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="stream-item__state">
+                                        <div class="form-field toggler selection-primitive">
+                                            <div class="form-field__main">
+                                                <label class="form-field__field selection-primitive__field">
+                                                    <div class="selection-primitive__input">
+                                                        <input class="selection-primitive__native" type="checkbox">
+
+                                                        <div class="toggler__switcher">
+                                                            <div class="toggler__switcher-value toggler__switcher-value_on">On</div>
+                                                            <div class="toggler__switcher-value toggler__switcher-value_off">Off</div>
+
+                                                            <div class="toggler__switcher-circle"></div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn_icon-only btn_variant_ghost" type="button">
+                                        <svg class="btn__icon svg-icon">
+                                            <use xlink:href="./icons/sprite.svg#cross"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="stream-item">
+                                    <div class="stream-item__id">Stream 2</div>
+
+                                    <div class="stream-item__ticker-list">CCJ.US, NATKY.US, SRUUF.US, NXE.US, UEC US, UEC US, NATKY.US, SRUUF.US</div>
+
+                                    <div class="stream-item__period">
+                                        <label class="stream-item__period-label">Period (min)</label>
+
+                                        <div class="stream-item__period-input form-field input-text">
+                                            <div class="form-field__main">
+                                                <div class="form-field__field input-text__field">
+                                                    <div class="input-text__bd"></div>
+                                                    <input class="form-field__input input-text__input" type="number" placeholder="XX" value="1" min="1" step="1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="stream-item__state">
+                                        <div class="form-field toggler selection-primitive">
+                                            <div class="form-field__main">
+                                                <label class="form-field__field selection-primitive__field">
+                                                    <div class="selection-primitive__input">
+                                                        <input class="selection-primitive__native" type="checkbox" checked>
+
+                                                        <div class="toggler__switcher">
+                                                            <div class="toggler__switcher-value toggler__switcher-value_on">On</div>
+                                                            <div class="toggler__switcher-value toggler__switcher-value_off">Off</div>
+
+                                                            <div class="toggler__switcher-circle"></div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn_icon-only btn_variant_ghost" type="button">
+                                        <svg class="btn__icon svg-icon">
+                                            <use xlink:href="./icons/sprite.svg#cross"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script type="module" src="/src/scripts/index.js"></script>
+    </body>
+</html>

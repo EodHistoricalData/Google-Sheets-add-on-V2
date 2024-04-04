@@ -58,6 +58,12 @@
         }
     }
 
+    &__empty {
+        @include typo('t2');
+
+        color: var(--eodClrGrey500);
+    }
+
     &__field {
         position: relative;
         z-index: var(--eodZIndexLocal);

@@ -1,0 +1,61 @@
+.stream-list {
+    &__label {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        &-text {
+            @include typo('t1');
+        }
+
+        &-action {
+            &-list {
+                display: flex;
+                gap: 12px;
+            }
+
+            &-item {
+                display: flex;
+                align-items: center;
+                gap: 2px;
+
+                cursor: pointer;
+
+                &:hover {
+                    .stream-list__label-action-text {
+                        text-decoration: none;
+                    }
+                }
+
+                &_variant {
+                    &_success {
+                        .stream-list__label-action-icon {
+                            color: var(--eodClrDarkGreen1000);
+                        }
+                    }
+
+                    &_danger {
+                        .stream-list__label-action-icon {
+                            color: var(--eodClrOrange);
+                        }
+                    }
+                }
+            }
+
+            &-icon {
+                width: 18px;
+                height: 18px;
+            }
+
+            &-text {
+                @include typo('t2');
+
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__body {
+        margin-top: 8px;
+    }
+}

@@ -1,0 +1,45 @@
+.form-field-group {
+    width: 100%;
+
+    &.slide-toggle {
+        .form-field-group__label {
+            margin-bottom: 0;
+        }
+
+        &.-active {
+            .form-field-group__label {
+                margin-bottom: 4px;
+            }
+
+            .form-field-group__label-icon {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__label {
+        display: flex;
+        margin-bottom: 4px;
+        gap: 8px;
+
+        transition: var(--eodDur2);
+        transition-property: margin;
+
+        &-text {
+            @include typo('t2');
+        }
+
+        &-icon {
+            width: 18px;
+            height: 18px;
+
+            transition: var(--eodDur2);
+        }
+    }
+
+    &__body {
+        padding: 8px;
+
+        background: var(--eodClrGrey100);
+    }
+}

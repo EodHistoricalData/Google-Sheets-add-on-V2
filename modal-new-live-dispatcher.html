@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@google-sheets-add-on/home</title>
+
+        <link rel="stylesheet" href="/src/styles/index.scss">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body style="padding: 24px; max-width: 768px;">
+        <form action="#">
+            <div class="form__head">
+                <div class="form__head-title">New live stream</div>
+                <div class="form__head-description">You can choose multiple tickers for this request. </div>
+            </div>
+
+            <div class="form__body">
+                <div class="form-group">
+                    <div class="form-group__body">
+                        <div class="form-row">
+                            <div class="form-field-group">
+                                <div class="form-field-group__label">
+                                    <div class="form-field-group__label-text">Search for company / ticker</div>
+                                </div>
+
+                                <div class="form-field-group__body">
+                                    <div class="form-row form-row_sm">
+                                        <div class="form-field input-text">
+                                            <div class="form-field__main">
+                                                <div class="form-field__field input-text__field">
+                                                    <div class="input-text__bd"></div>
+                                                    <input
+                                                        class="form-field__input input-text__input"
+                                                        type="text"
+                                                        placeholder="AAPL"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row form-row_sm">
+                                        <div class="form-field select-multiple">
+                                            <div class="form-field__main">
+                                                <div class="form-field__field select-multiple__field">
+                                                    <div class="select-multiple__bd"></div>
+
+                                                    <select class="form-field__input select-multiple__input" multiple>
+                                                        <option value="AAPL1">AAPL1</option>
+                                                        <option value="AAPL2">AAPL2</option>
+                                                        <option value="AAPL3">AAPL3</option>
+                                                        <option value="AAPL4">AAPL4</option>
+                                                        <option value="AAPL5">AAPL5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-row form-row_sm">
+                                        <button class="btn btn_variant_alternative" type="button">Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label class="form-field__label">List of tickers for request</label>
+
+                                <div class="form-field__main">
+                                    <!-- <div class="form-field__empty">None</div> -->
+
+                                    <div class="tag-list tag-list_wrap">
+                                        <div class="tag tag_variant_alternative tag_has-action">
+                                            <div class="tag__text">AAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.USAAPL.US</div>
+
+                                            <svg class="tag__icon svg-icon">
+                                                <use xlink:href="./icons/sprite.svg#cross"></use>
+                                            </svg>
+                                        </div>
+
+                                        <div class="tag tag_variant_alternative tag_has-action">
+                                            <div class="tag__text">MSFT.US</div>
+
+                                            <svg class="tag__icon svg-icon">
+                                                <use xlink:href="./icons/sprite.svg#cross"></use>
+                                            </svg>
+                                        </div>
+
+                                        <div class="tag tag_variant_alternative tag_has-action">
+                                            <div class="tag__text">ABBA.US</div>
+
+                                            <svg class="tag__icon svg-icon">
+                                                <use xlink:href="./icons/sprite.svg#cross"></use>
+                                            </svg>
+                                        </div>
+
+                                        <div class="tag tag_variant_alternative tag_has-action">
+                                            <div class="tag__text">RETR</div>
+
+                                            <svg class="tag__icon svg-icon">
+                                                <use xlink:href="./icons/sprite.svg#cross"></use>
+                                            </svg>
+                                        </div>
+
+                                        <div class="tag tag_variant_alternative tag_has-action">
+                                            <div class="tag__text">MSFT.US</div>
+
+                                            <svg class="tag__icon svg-icon">
+                                                <use xlink:href="./icons/sprite.svg#cross"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-group__title">Settings</div>
+
+                    <div class="form-group__body">
+                        <div class="form-row">
+                            <div class="form-field form-field_size_md input-text">
+                                <label class="form-field__label">Data update period (min)</label>
+
+                                <div class="form-field__main">
+                                    <div class="form-field__field input-text__field">
+                                        <div class="input-text__bd"></div>
+                                        <input class="form-field__input input-text__input" type="number" placeholder="XX" value="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-field form-field_size_md select">
+                                <label class="form-field__label">Type of output</label>
+
+                                <div class="form-field__main">
+                                    <div class="form-field__field select__field">
+                                        <div class="select__bd"></div>
+
+                                        <svg class="select__arrow svg-icon">
+                                            <use xlink:href="./icons/sprite.svg#chevron-down"></use>
+                                        </svg>
+
+                                        <select class="form-field__input select__input">
+                                            <option value="1">One sheet</option>
+                                            <option value="2">value-2</option>
+                                            <option value="3">value-3</option>
+                                            <option value="4">value-4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-group__title">Filters</div>
+
+                    <div class="form-group__body">
+                        <div class="form-row">
+                            <div class="form-field selection-group-primitive">
+                                <label class="form-field__label">Some field name</label>
+
+                                <div class="form-field__main">
+                                    <div class="form-field__field">
+                                        <div class="selection-group-primitive__list">
+                                            <div class="form-field checkbox selection-primitive">
+                                                <div class="form-field__main">
+                                                    <label class="form-field__field selection-primitive__field">
+                                                        <div class="selection-primitive__input">
+                                                            <input class="selection-primitive__native" name="filters" type="checkbox">
+                                                            <div class="selection-primitive__icon-box"></div>
+                                                            <svg class="selection-primitive__icon-pic svg-icon">
+                                                                <use xlink:href="./icons/sprite.svg#checkbox"></use>
+                                                            </svg>
+                                                        </div>
+
+                                                        <div class="selection-primitive__content">
+                                                            <div class="selection-primitive__label">
+                                                                <strong>all</strong>
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-field checkbox selection-primitive">
+                                                <div class="form-field__main">
+                                                    <label class="form-field__field selection-primitive__field">
+                                                        <div class="selection-primitive__input">
+                                                            <input class="selection-primitive__native" name="filters" type="checkbox">
+                                                            <div class="selection-primitive__icon-box"></div>
+                                                            <svg class="selection-primitive__icon-pic svg-icon">
+                                                                <use xlink:href="./icons/sprite.svg#checkbox"></use>
+                                                            </svg>
+                                                        </div>
+
+                                                        <div class="selection-primitive__content">
+                                                            <div class="selection-primitive__label">
+                                                                timestamp
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-field checkbox selection-primitive">
+                                                <div class="form-field__main">
+                                                    <label class="form-field__field selection-primitive__field">
+                                                        <div class="selection-primitive__input">
+                                                            <input class="selection-primitive__native" name="filters" type="checkbox">
+                                                            <div class="selection-primitive__icon-box"></div>
+                                                            <svg class="selection-primitive__icon-pic svg-icon">
+                                                                <use xlink:href="./icons/sprite.svg#checkbox"></use>
+                                                            </svg>
+                                                        </div>
+
+                                                        <div class="selection-primitive__content">
+                                                            <div class="selection-primitive__label">
+                                                                ...
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-group__body">
+                        <div class="form-row">
+                            <button class="btn btn_variant_secondary">
+                                <div class="btn__text">Save real-time stream</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <script type="module" src="/src/scripts/index.js"></script>
+    </body>
+</html>

@@ -1,6 +1,10 @@
 .tag {
     display: inline-flex;
+    align-items: center;
+    overflow: hidden;
     padding: 2px 4px;
+    max-width: 100%;
+    gap: 4px;
 
     border-radius: 4px;
 
@@ -16,9 +20,37 @@
 
             background: var(--eodClrDarkRed1000);
         }
+
+        &_alternative {
+            background: var(--eodClrBlue);
+
+            &.tag_has-action {
+                &:hover,
+                &:focus-visible {
+                    background: var(--eodClrBlueHover);
+                }
+
+                &:active {
+                    background: var(--eodClrBlueActive);
+                }
+            }
+        }
+    }
+
+    &_has-action {
+        user-select: none;
+        cursor: pointer;
     }
 
     &__text {
         @include typo('t3');
+        @include textOverflow();
+
+        max-width: 100%;
+    }
+
+    &__icon {
+        width: 12px;
+        height: 12px;
     }
 }
