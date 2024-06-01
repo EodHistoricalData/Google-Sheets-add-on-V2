@@ -7,7 +7,7 @@ export function initMask(elem) {
         registerCursorTracker({ input: elem, delimiter: '/' })
 
         elem.addEventListener('input', (e) => {
-            elem.value = formatDate(e.target.value, { datePattern: ['d', 'm', 'Y']})
+            elem.value = formatDate(e.target.value, { datePattern: ['Y', 'm', 'd']})
         })
     }
 }
