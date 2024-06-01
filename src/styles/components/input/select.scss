@@ -27,6 +27,7 @@
         height: 18px;
 
         transform: translateY(-50%);
+        pointer-events: none;
     }
 
     &__input {
