@@ -1,0 +1,11 @@
+.default-layout-disclaimer {
+    @include typo('t3');
+
+    color: var(--eodClrGrey700);
+
+    padding: 10px var(--eodContainerPaddingX);
+
+    a {
+        @include linkBase();
+    }
+}
